@@ -134,16 +134,26 @@ public class Element {
         return (a.0*b.0, a.1*b.1);
     }
     
-    func _gcd_recursive(_ args: Int...) -> Int{ //... allows for any arbitrary number of arguments to be passed (creates a list internally (maybe))
-        /*
-        Get the greatest common denominator among any number of ints
-        */
-        if args.count == 2{
-            return gcd(args[0], args[1]);
-        }else{
-//            return gcd(args[0], _gcd_recursive(args[1...])); //not supported yet ...
+//    func _gcd_recursive(list: [Int]) -> Int{ //... allows for any arbitrary number of arguments to be passed (creates a list internally (maybe))
+//        /*
+//        Get the greatest common denominator among any number of ints
+//        */
+//        if list.count == 2{
+//            return gcd(list[0], list[1]);
+//        }else{
+////            return gcd(list[0], _gcd_recursive(list: Array(dropFirst(list)))); //not supported yet ...
+//        }
+//        return 0;
+//    }
+    
+    //Correctly finds GCD of list of numbers!
+    //n = arr.count-1
+    func findGCD(arr: [Int], n: Int) -> Int{
+        var result = arr[0];
+        for i in 1...n{
+            result = gcd(arr[i], result);
         }
-        return 0;
+        return result;
     }
     
     //Implementing gcd
