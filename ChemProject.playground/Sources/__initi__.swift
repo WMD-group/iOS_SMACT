@@ -36,14 +36,19 @@ public class Element {
     private var sse_data : (String, Float)?;
     private var sse : Float?;
     
-    private let HHI_r : Float?;
-    private let name : String;
-    private let zNumber : Float;
-    private let oxidation_states : [Int];
-    private let SSE : Float?;
-    private let superSymbol : String;
+    /*
+        internal is private to the current module. fileprivate is private to the current file (which used to be called private).
+        The new private is private to the current scope (closer to what most people probably think of as private).
+     */
+    internal let HHI_r : Float?;
+    internal let name : String;
+    internal let zNumber : Float;
+    internal let oxidation_states : [Int];
+    internal let SSE : Float?;
+    internal let superSymbol : String;
     
-    public init(symbol : String) {
+    //added the _ to avoid having to type sumbol : ... each time Element class is instansiated
+    public init(_ symbol : String) {
         /*
         Initialise Element class
 
@@ -82,7 +87,7 @@ public class Element {
         
     }
     
-    func neutral_ratios_iter(oxidations : [Int], stoichs : Bool = false, threshold : Int = 5) -> (Int, Int){
+    func neutral_ratios_iter(oxidations : [Int], stoichs : Bool = false, threshold : Int = 5) -> ([[Int]]){
         /*
         Iterator for charge-neutral stoichiometries
 
@@ -106,20 +111,75 @@ public class Element {
             //creates a 2D list, with each inner list repeated len(oxidations) times
             //ex: [list(range(1,3))]*3 -> [[1, 2], [1, 2], [1, 2]]
             //Creating the 2D array
-            var stoichsList = Array(repeating: Array(1..<threshold+1), count: oxidations.count);
+            stoichsList = Array(repeating: Array(1..<threshold+1), count: oxidations.count);
             
         }
-        
         // First filter: remove combinations which have a common denominator
         // greater than 1 (i.e. Use simplest form of each set of ratios)
         // Second filter: return only charge-neutral combinations
-        print("Oxidations: ", oxidations);
+//        print("Oxidations: ", oxidations);
         
         //not sure how to do the next bit ...
         
-        return (0,0);
+        //Loop through each level of the combindations list
+        //Each array within stoichsList represents an Array of numbers 1->5
+        //Thoose numbers are used to combine x number of that element with another element ( x in stoichsList[i] )
+        var allowedList : [[Int]] = [];
+        for el1 in stoichsList[0]{
+            for el2 in stoichsList[1]{
+                for el3 in stoichsList[2]{
+                    let neutral = is_neutral(oxidations: oxidations, stoichs: [el1, el2, el3]);
+                    let gcd = findGCDList(arr: [el1, el2, el3]);
+                    
+                    if neutral && gcd == 1{
+                        //added this combindation to the list
+                        allowedList.append([el1, el2, el3]);
+                    }
+                }
+            }
+        }
+        
+        return (allowedList);
     }
-    func is_neutral(oxidations: (Int, Int), stoichs: (Int,Int)) -> Bool{
+    //Given a tuple of oxidation states, find the corresponding charge neutral states
+    func neutral_ratios(oxidations : [Int], stoichs : Bool = false, threshold : Int = 5) -> (Bool, [[Int]]){
+        /*
+        Get a list of charge-neutral compounds
+
+        Given a list of oxidation states of arbitrary length, yield ratios in which
+        these form a charge-neutral compound. Stoichiometries may be provided as a
+        set of legal stoichiometries per site (e.g. a known family of compounds);
+        otherwise all unique ratios are tried up to a threshold coefficient.
+
+        Given a list of oxidation states of arbitrary length it searches for
+        neutral ratios in a given ratio of sites (stoichs) or up to a given
+        threshold.
+
+        Args:
+            oxidations (list of ints): Oxidation state of each site
+            stoichs (list of positive ints): A selection of valid stoichiometric
+                ratios for each site
+            threshold (int): Maximum stoichiometry coefficient; if no 'stoichs'
+                argument is provided, all combinations of integer coefficients up
+                to this value will be tried.
+
+        Returns:
+            (exists, allowed_ratios) (tuple):
+
+            exists *bool*:
+                True ifc any ratio exists, otherwise False
+
+            allowed_ratios *list of tuples*:
+                Ratios of atoms in given oxidation
+                states which yield a charge-neutral structure
+        */
+        
+        let allowed_ratios = neutral_ratios_iter(oxidations: oxidations);
+        
+        return (allowed_ratios.count > 0, allowed_ratios);
+    }
+    
+    func is_neutral(oxidations: [Int], stoichs: [Int]) -> Bool{
         /*
         Check if set of oxidation states is neutral in given stoichiometry
 
@@ -127,11 +187,14 @@ public class Element {
             oxidations (tuple): Oxidation states of a set of oxidised elements
             stoichs (tuple): Stoichiometry values corresponding to `oxidations`
         */
-        let temp = multiplyTuples(a: oxidations, b: stoichs);
-        return 0 == (temp.0+temp.1);
-    }
-    func multiplyTuples(a: (Int, Int), b: (Int, Int)) -> (Int, Int){
-        return (a.0*b.0, a.1*b.1);
+        
+        //Take in list of oxidation states and list of stoichs
+        //Check for neutrality
+        
+        let multipliedList = zip(oxidations, stoichs).map{ $0 * $1 } //create list of tuples then multiple tuples together
+        //0 is the first number added with each element of the list
+        let sumnation = multipliedList.reduce(0, +);
+        return sumnation == 0;
     }
     
 //    func _gcd_recursive(list: [Int]) -> Int{ //... allows for any arbitrary number of arguments to be passed (creates a list internally (maybe))
@@ -148,8 +211,9 @@ public class Element {
     
     //Correctly finds GCD of list of numbers!
     //n = arr.count-1
-    func findGCD(arr: [Int], n: Int) -> Int{
+    func findGCDList(arr: [Int]) -> Int{
         var result = arr[0];
+        let n = arr.count-1;
         for i in 1...n{
             result = gcd(arr[i], result);
         }
