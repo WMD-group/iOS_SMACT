@@ -16,6 +16,7 @@
 		487EAF822083586C00A2D55B /* element_data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 487EAF7E2083586B00A2D55B /* element_data.txt */; };
 		487EAF832083586C00A2D55B /* oxidation_states.txt in Resources */ = {isa = PBXBuildFile; fileRef = 487EAF7F2083586C00A2D55B /* oxidation_states.txt */; };
 		487EAF842083586C00A2D55B /* SSE.csv in Resources */ = {isa = PBXBuildFile; fileRef = 487EAF802083586C00A2D55B /* SSE.csv */; };
+		488E65C3208363ED00AF1E1F /* CrystalOptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E65C2208363ED00AF1E1F /* CrystalOptionsController.swift */; };
 		48CB9EA72082BC1300443AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB9EA62082BC1300443AAD /* AppDelegate.swift */; };
 		48CB9EA92082BC1300443AAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB9EA82082BC1300443AAD /* ViewController.swift */; };
 		48CB9EAC2082BC1300443AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CB9EAA2082BC1300443AAD /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		487EAF7E2083586B00A2D55B /* element_data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = element_data.txt; sourceTree = "<group>"; };
 		487EAF7F2083586C00A2D55B /* oxidation_states.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = oxidation_states.txt; sourceTree = "<group>"; };
 		487EAF802083586C00A2D55B /* SSE.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SSE.csv; sourceTree = "<group>"; };
+		488E65C2208363ED00AF1E1F /* CrystalOptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrystalOptionsController.swift; sourceTree = "<group>"; };
 		48CB9EA32082BC1300443AAD /* ChemestyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChemestyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48CB9EA62082BC1300443AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48CB9EA82082BC1300443AAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			children = (
 				48CB9EA82082BC1300443AAD /* ViewController.swift */,
 				487EAF73208356B400A2D55B /* PeriodicTableController.swift */,
+				488E65C2208363ED00AF1E1F /* CrystalOptionsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				487EAF6D208350AF00A2D55B /* RoundButton.swift in Sources */,
 				487EAF792083583600A2D55B /* Tester.swift in Sources */,
 				487EAF7B2083583600A2D55B /* data_loader.swift in Sources */,
+				488E65C3208363ED00AF1E1F /* CrystalOptionsController.swift in Sources */,
 				48CB9EA92082BC1300443AAD /* ViewController.swift in Sources */,
 				48CB9EA72082BC1300443AAD /* AppDelegate.swift in Sources */,
 				487EAF74208356B400A2D55B /* PeriodicTableController.swift in Sources */,

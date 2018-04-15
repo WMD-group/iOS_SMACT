@@ -26,6 +26,11 @@ class PeriodicTableController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    //Function mapped to "Let's Go" button
+    @IBAction func navigateCrystalOptions(_ sender: Any) {
+        //preform check to make sure that the three elements have been slected
+        performSegue(withIdentifier: "crystalOptionsNav", sender: self);
+    }
     
     //Mapping all the buttons to three seperate functions
     //Each function changes the label of either a, b or x
@@ -44,8 +49,12 @@ class PeriodicTableController: UIViewController {
     @IBAction func xElementPressed(_ sender: UIButton) {
         xElementSelected.text = sender.titleLabel!.text;
     }
-    
-    
+
+    //Function responcible for sending data to next page
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var crystalOptionsController = segue.destination as!  CrystalOptionsController;
+        
+    }
     /*
     // MARK: - Navigation
 
