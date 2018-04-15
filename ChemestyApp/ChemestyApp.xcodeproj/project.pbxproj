@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		487EAF6D208350AF00A2D55B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487EAF6C208350AF00A2D55B /* RoundButton.swift */; };
+		487EAF74208356B400A2D55B /* PeriodicTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487EAF73208356B400A2D55B /* PeriodicTableController.swift */; };
+		487EAF792083583600A2D55B /* Tester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487EAF762083583600A2D55B /* Tester.swift */; };
+		487EAF7A2083583600A2D55B /* __initi__.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487EAF772083583600A2D55B /* __initi__.swift */; };
+		487EAF7B2083583600A2D55B /* data_loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487EAF782083583600A2D55B /* data_loader.swift */; };
+		487EAF812083586C00A2D55B /* HHIs.txt in Resources */ = {isa = PBXBuildFile; fileRef = 487EAF7D2083586B00A2D55B /* HHIs.txt */; };
+		487EAF822083586C00A2D55B /* element_data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 487EAF7E2083586B00A2D55B /* element_data.txt */; };
+		487EAF832083586C00A2D55B /* oxidation_states.txt in Resources */ = {isa = PBXBuildFile; fileRef = 487EAF7F2083586C00A2D55B /* oxidation_states.txt */; };
+		487EAF842083586C00A2D55B /* SSE.csv in Resources */ = {isa = PBXBuildFile; fileRef = 487EAF802083586C00A2D55B /* SSE.csv */; };
 		48CB9EA72082BC1300443AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB9EA62082BC1300443AAD /* AppDelegate.swift */; };
 		48CB9EA92082BC1300443AAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB9EA82082BC1300443AAD /* ViewController.swift */; };
 		48CB9EAC2082BC1300443AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CB9EAA2082BC1300443AAD /* Main.storyboard */; };
@@ -15,6 +24,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		487EAF6C208350AF00A2D55B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		487EAF73208356B400A2D55B /* PeriodicTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodicTableController.swift; sourceTree = "<group>"; };
+		487EAF762083583600A2D55B /* Tester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tester.swift; sourceTree = "<group>"; };
+		487EAF772083583600A2D55B /* __initi__.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = __initi__.swift; sourceTree = "<group>"; };
+		487EAF782083583600A2D55B /* data_loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data_loader.swift; sourceTree = "<group>"; };
+		487EAF7D2083586B00A2D55B /* HHIs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HHIs.txt; sourceTree = "<group>"; };
+		487EAF7E2083586B00A2D55B /* element_data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = element_data.txt; sourceTree = "<group>"; };
+		487EAF7F2083586C00A2D55B /* oxidation_states.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = oxidation_states.txt; sourceTree = "<group>"; };
+		487EAF802083586C00A2D55B /* SSE.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SSE.csv; sourceTree = "<group>"; };
 		48CB9EA32082BC1300443AAD /* ChemestyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChemestyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48CB9EA62082BC1300443AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48CB9EA82082BC1300443AAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +53,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		487EAF6B2083509B00A2D55B /* Stylers */ = {
+			isa = PBXGroup;
+			children = (
+				487EAF6C208350AF00A2D55B /* RoundButton.swift */,
+			);
+			path = Stylers;
+			sourceTree = "<group>";
+		};
+		487EAF702083524300A2D55B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				48CB9EA82082BC1300443AAD /* ViewController.swift */,
+				487EAF73208356B400A2D55B /* PeriodicTableController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		487EAF75208357E900A2D55B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				487EAF772083583600A2D55B /* __initi__.swift */,
+				487EAF782083583600A2D55B /* data_loader.swift */,
+				487EAF762083583600A2D55B /* Tester.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		487EAF7C2083584300A2D55B /* Data_Store */ = {
+			isa = PBXGroup;
+			children = (
+				487EAF7E2083586B00A2D55B /* element_data.txt */,
+				487EAF7D2083586B00A2D55B /* HHIs.txt */,
+				487EAF7F2083586C00A2D55B /* oxidation_states.txt */,
+				487EAF802083586C00A2D55B /* SSE.csv */,
+			);
+			path = Data_Store;
+			sourceTree = "<group>";
+		};
 		48CB9E9A2082BC1300443AAD = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +110,11 @@
 		48CB9EA52082BC1300443AAD /* ChemestyApp */ = {
 			isa = PBXGroup;
 			children = (
+				487EAF7C2083584300A2D55B /* Data_Store */,
+				487EAF75208357E900A2D55B /* Helpers */,
+				487EAF702083524300A2D55B /* Controllers */,
+				487EAF6B2083509B00A2D55B /* Stylers */,
 				48CB9EA62082BC1300443AAD /* AppDelegate.swift */,
-				48CB9EA82082BC1300443AAD /* ViewController.swift */,
 				48CB9EAA2082BC1300443AAD /* Main.storyboard */,
 				48CB9EAD2082BC1400443AAD /* Assets.xcassets */,
 				48CB9EAF2082BC1400443AAD /* LaunchScreen.storyboard */,
@@ -124,6 +183,10 @@
 			files = (
 				48CB9EB12082BC1400443AAD /* LaunchScreen.storyboard in Resources */,
 				48CB9EAE2082BC1400443AAD /* Assets.xcassets in Resources */,
+				487EAF832083586C00A2D55B /* oxidation_states.txt in Resources */,
+				487EAF842083586C00A2D55B /* SSE.csv in Resources */,
+				487EAF812083586C00A2D55B /* HHIs.txt in Resources */,
+				487EAF822083586C00A2D55B /* element_data.txt in Resources */,
 				48CB9EAC2082BC1300443AAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				487EAF6D208350AF00A2D55B /* RoundButton.swift in Sources */,
+				487EAF792083583600A2D55B /* Tester.swift in Sources */,
+				487EAF7B2083583600A2D55B /* data_loader.swift in Sources */,
 				48CB9EA92082BC1300443AAD /* ViewController.swift in Sources */,
 				48CB9EA72082BC1300443AAD /* AppDelegate.swift in Sources */,
+				487EAF74208356B400A2D55B /* PeriodicTableController.swift in Sources */,
+				487EAF7A2083583600A2D55B /* __initi__.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
