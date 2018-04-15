@@ -14,10 +14,12 @@ class CrystalOptionsController: UIViewController {
     @IBOutlet weak var aElementChosen: UILabel!
     @IBOutlet weak var bElementChosen: UILabel!
     @IBOutlet weak var xElementChosen: UILabel!
+    @IBOutlet weak var computedOutput: UITextView!
     
     //Empty list containing the label values
     var suppliedList : [String] = [];
     
+    //this function is invoked once the controller is ready
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,7 +27,10 @@ class CrystalOptionsController: UIViewController {
         bElementChosen.text = suppliedList[1];
         xElementChosen.text = suppliedList[2];
         
+        //calling my test class
+        let result = TestInit().Run();
         // Do any additional setup after loading the view.
+        computedOutput.text = result;
     }
 
     override func didReceiveMemoryWarning() {

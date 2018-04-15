@@ -14,7 +14,7 @@ public class Data_loader{
     
     public init() {
         _print_warnings = false;
-        data_directory = "Resources/data";
+        data_directory = "../Data_Store/";
         
         //Init data holding variables
         _element_data = Dictionary<String, Zip2Sequence<Array<String>, Array<Any>> >(); //empty dictionary of type String: Any
@@ -40,9 +40,20 @@ public class Data_loader{
     func _get_data_rows(filename: String, filetype: String) -> [[String]]{
         //Generator for datafile entries by row
         var myStrings : [String] = [""];
+
+        //Reading in the file
+//        if let path = Bundle.main.path(forResource: data_directory+filename, ofType: filetype) {
+//            do {
+//                let data = try String(contentsOfFile: path, encoding: .utf8)
+//                myStrings = data.components(separatedBy: .newlines);
+//            } catch {
+//                print(error)
+//            }
+//        }
         
         //Reading in the file
-        if let path = Bundle.main.path(forResource: "data/"+filename, ofType: filetype) {
+        //.path converts it to a String
+        if let path = Bundle.main.url(forResource: filename, withExtension: filetype)?.path {
             do {
                 let data = try String(contentsOfFile: path, encoding: .utf8)
                 myStrings = data.components(separatedBy: .newlines);
