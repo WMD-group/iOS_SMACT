@@ -15,9 +15,16 @@ class CrystalOptionsController: UIViewController {
     @IBOutlet weak var bElementChosen: UILabel!
     @IBOutlet weak var xElementChosen: UILabel!
     
+    //Empty list containing the label values
+    var suppliedList : [String] = [];
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        aElementChosen.text = suppliedList[0];
+        bElementChosen.text = suppliedList[1];
+        xElementChosen.text = suppliedList[2];
+        
         // Do any additional setup after loading the view.
     }
 
@@ -26,7 +33,7 @@ class CrystalOptionsController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
 

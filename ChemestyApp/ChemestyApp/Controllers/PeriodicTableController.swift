@@ -26,7 +26,7 @@ class PeriodicTableController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    //Function mapped to "Let's Go" button
+//    //Function mapped to "Let's Go" button
     @IBAction func navigateCrystalOptions(_ sender: Any) {
         //preform check to make sure that the three elements have been slected
         performSegue(withIdentifier: "crystalOptionsNav", sender: self);
@@ -52,7 +52,11 @@ class PeriodicTableController: UIViewController {
 
     //Function responcible for sending data to next page
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var crystalOptionsController = segue.destination as!  CrystalOptionsController;
+        let crystalOptionsController = segue.destination as!  CrystalOptionsController;
+        
+        //preform check to make sure the data is not null
+        let list = [aElementSelected.text, bElementSelected.text, xElementSelected.text];
+        crystalOptionsController.suppliedList = list as! [String]; //enforcing the type to be list of string
         
     }
     /*

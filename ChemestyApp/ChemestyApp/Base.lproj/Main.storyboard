@@ -763,7 +763,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="navigateCrystalOptions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQ4-BQ-LBB"/>
-                                    <segue destination="6Ja-g1-QVc" kind="show" identifier="crystalOptionsNav" id="nvL-8N-huS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;2&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bw-uQ-GK2">
@@ -798,6 +797,7 @@
                         <outlet property="aElementSelected" destination="wYV-Sh-xbE" id="5hr-JW-RrL"/>
                         <outlet property="bElementSelected" destination="1bw-uQ-GK2" id="kao-ZW-hhQ"/>
                         <outlet property="xElementSelected" destination="ga5-Zp-oK2" id="cIX-eV-faZ"/>
+                        <segue destination="6Ja-g1-QVc" kind="show" identifier="crystalOptionsNav" id="SHP-FX-vPX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -883,7 +883,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gfv-3W-SGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125.97656249999999" y="826.5625"/>
+            <point key="canvasLocation" x="126" y="892"/>
         </scene>
     </scenes>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
