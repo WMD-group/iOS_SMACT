@@ -27,6 +27,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="aElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bfo-ni-0RT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujn-wR-jQW" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="110" y="243" width="50" height="50"/>
@@ -37,6 +40,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="aElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XR3-Kj-bcn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVq-e2-s6f" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="168" y="243" width="50" height="50"/>
@@ -47,6 +53,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="aElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="23a-wV-HFP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Kp-k9-NY4" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="110" y="301" width="50" height="50"/>
@@ -57,6 +66,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="aElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NWG-zw-zHT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e79-ud-gsQ" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="168" y="301" width="50" height="50"/>
@@ -67,6 +79,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="aElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cYf-cm-M5w"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKl-pL-dia" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="110" y="359" width="50" height="50"/>
@@ -77,6 +92,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="aElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="000-rC-YLt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTV-as-cnJ" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="168" y="359" width="50" height="50"/>
@@ -87,6 +105,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="aElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FE4-t3-jlS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfg-tb-AYu" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="110" y="417" width="50" height="50"/>
@@ -97,6 +118,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="aElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cuz-me-kse"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsh-cI-bKH" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="168" y="417" width="50" height="50"/>
@@ -107,6 +131,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="aElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mBW-LF-xQm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWV-Tl-011" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="110" y="475" width="50" height="50"/>
@@ -117,6 +144,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="aElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XwR-K7-La3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avx-XD-JnF" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="168" y="475" width="50" height="50"/>
@@ -127,6 +157,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="aElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PS4-Dh-pIM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lo-Sv-fcn" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="110" y="533" width="50" height="50"/>
@@ -137,6 +170,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="aElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6cS-9h-fO9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSK-HF-S2S" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="168" y="533" width="50" height="50"/>
@@ -147,6 +183,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="aElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fMW-Yu-Gfq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkC-Wp-KMy" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="226" y="417" width="50" height="50"/>
@@ -157,6 +196,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zG4-GO-5eH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyt-1j-nfE" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="226" y="475" width="50" height="50"/>
@@ -167,6 +209,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g16-Ly-8lZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJm-bD-p6l" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="226" y="533" width="50" height="50"/>
@@ -177,6 +222,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="71I-db-9dY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTX-ei-ut5" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="284" y="417" width="50" height="50"/>
@@ -187,6 +235,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F0z-aw-Eqk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJB-lZ-Lcr" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="284" y="475" width="50" height="50"/>
@@ -197,6 +248,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V7t-yC-McQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cH-vY-adf" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="284" y="533" width="50" height="50"/>
@@ -207,6 +261,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="af7-HY-ewX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoR-de-W1X" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="342" y="417" width="50" height="50"/>
@@ -217,6 +274,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F3k-HS-Hts"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g38-ga-18S" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="342" y="475" width="50" height="50"/>
@@ -227,6 +287,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zft-ZQ-B1S"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSc-0n-ySd" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="342" y="533" width="50" height="50"/>
@@ -237,6 +300,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sYP-B4-1Nv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUU-4U-gKs" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="400" y="417" width="50" height="50"/>
@@ -247,6 +313,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qQE-hd-SqZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PES-xE-6bh" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="400" y="475" width="50" height="50"/>
@@ -257,6 +326,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2J6-YI-4Xo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckg-jd-Oya" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="400" y="533" width="50" height="50"/>
@@ -267,6 +339,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FEI-sT-GZM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nt5-PY-FME" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="458" y="417" width="50" height="50"/>
@@ -277,6 +352,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vup-tM-DTW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fy7-Et-XDH" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="458" y="475" width="50" height="50"/>
@@ -287,6 +365,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="swQ-oD-6aC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlg-ST-KjV" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="458" y="533" width="50" height="50"/>
@@ -297,6 +378,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6H6-Zx-EAS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqO-Sj-wgu" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="516" y="417" width="50" height="50"/>
@@ -307,6 +391,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gcu-TN-MmX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAC-Ge-uvX" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="516" y="475" width="50" height="50"/>
@@ -317,6 +404,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hPF-aG-ud7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBB-5M-yvw" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="516" y="533" width="50" height="50"/>
@@ -327,6 +417,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="70T-wI-TeQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6Q-wb-C6l" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="574" y="417" width="50" height="50"/>
@@ -337,6 +430,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dwF-UB-FVC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hm-pd-QUn" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="574" y="475" width="50" height="50"/>
@@ -347,6 +443,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nUm-KQ-icY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yo2-yx-0ug" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="574" y="533" width="50" height="50"/>
@@ -357,6 +456,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0iP-kz-y6q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QQ-iy-fw6" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="632" y="417" width="50" height="50"/>
@@ -367,6 +469,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="61C-Gr-n1f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzi-fk-HKD" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="632" y="475" width="50" height="50"/>
@@ -377,6 +482,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b65-KJ-CSN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayb-Dq-nkj" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="632" y="533" width="50" height="50"/>
@@ -387,6 +495,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yp6-67-qit"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhE-8D-ZDw" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="690" y="417" width="50" height="50"/>
@@ -397,6 +508,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8SD-PW-zAM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Noi-ol-gIy" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="690" y="475" width="50" height="50"/>
@@ -407,6 +521,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wTc-dl-rGf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="un2-nk-IzZ" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="690" y="533" width="50" height="50"/>
@@ -417,6 +534,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yyd-8N-2nF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1O-bE-qSP" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="748" y="417" width="50" height="50"/>
@@ -427,6 +547,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E7B-Fb-Q2G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bD-3e-J1j" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="748" y="475" width="50" height="50"/>
@@ -437,6 +560,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddH-nm-WRI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dh8-qT-GVk" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="748" y="533" width="50" height="50"/>
@@ -447,6 +573,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3MI-yz-38e"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dJ-pF-bH4" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="806" y="301" width="50" height="50"/>
@@ -457,6 +586,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="xElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5pK-C1-wfL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggS-DK-Ufr" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="864" y="301" width="50" height="50"/>
@@ -467,6 +599,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="xElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="68Q-to-1GL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80s-C3-bAJ" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="806" y="359" width="50" height="50"/>
@@ -477,6 +612,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="xElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jcY-Bs-jjG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ake-Uf-W8v" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="864" y="359" width="50" height="50"/>
@@ -487,6 +625,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="xElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gUG-Nx-91p"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vlt-Dm-KiI" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="806" y="417" width="50" height="50"/>
@@ -497,6 +638,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="xElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bDs-aL-kYB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psy-ve-Hcx" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="864" y="417" width="50" height="50"/>
@@ -507,6 +651,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="xElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7G3-8c-0dS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDs-7g-faD" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="806" y="475" width="50" height="50"/>
@@ -517,6 +664,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="xElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q9c-kk-tLU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="363-r2-hne" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="864" y="475" width="50" height="50"/>
@@ -527,6 +677,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="xElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T67-iJ-CHP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiY-DT-bpB" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="806" y="533" width="50" height="50"/>
@@ -538,7 +691,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="buttonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xjs-cV-j50"/>
+                                    <action selector="xElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k6u-ws-YQQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjq-AV-cmZ" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
@@ -550,6 +703,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="xElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bWk-X5-B8G"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Periodic Table: Choose your elements" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ou4-OW-K28">
                                 <rect key="frame" x="279" y="67" width="466" height="38"/>
@@ -576,7 +732,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6td-fi-8Ck"/>
+                                    <action selector="xElementPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HEX-jm-aT9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chosen Elements:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsk-uR-Qja">
@@ -634,6 +790,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="aElementSelected" destination="wYV-Sh-xbE" id="5hr-JW-RrL"/>
+                        <outlet property="bElementSelected" destination="1bw-uQ-GK2" id="kao-ZW-hhQ"/>
+                        <outlet property="xElementSelected" destination="ga5-Zp-oK2" id="cIX-eV-faZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

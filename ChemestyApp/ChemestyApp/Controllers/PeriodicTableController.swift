@@ -10,6 +10,12 @@ import UIKit
 
 class PeriodicTableController: UIViewController {
 
+    //Creating local variables to store labels value
+    @IBOutlet weak var aElementSelected: UILabel!
+    @IBOutlet weak var bElementSelected: UILabel!
+    @IBOutlet weak var xElementSelected: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,10 +27,25 @@ class PeriodicTableController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //Mapping all the buttons to three seperate functions
+    //Each function changes the label of either a, b or x
     
-    @IBAction func buttonPressed(_ sender: Any) {
-        print("Button pressed ")
+    //a element selected
+    @IBAction func aElementPressed(_ sender: UIButton) {
+        aElementSelected.text = sender.titleLabel!.text;
     }
+    
+    //b element selected
+    @IBAction func bElementPressed(_ sender: UIButton) {
+        bElementSelected.text = sender.titleLabel!.text;
+    }
+    
+    //x element selected
+    @IBAction func xElementPressed(_ sender: UIButton) {
+        xElementSelected.text = sender.titleLabel!.text;
+    }
+    
+    
     /*
     // MARK: - Navigation
 
