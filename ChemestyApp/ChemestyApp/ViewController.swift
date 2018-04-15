@@ -24,8 +24,4 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func navigatePeriodicTable(_ sender: Any) {
-        print("navigation")
-    }
-    
 }
