@@ -9,7 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    //navigating to the next page with segues
+    //performSegue(withIdentifier: "periodicTableScene", sender: self);
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +23,9 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func navigatePeriodicTable(_ sender: Any) {
+        print("navigation")
+    }
+    
 }
-
