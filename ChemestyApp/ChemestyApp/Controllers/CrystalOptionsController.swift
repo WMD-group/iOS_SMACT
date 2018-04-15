@@ -27,8 +27,10 @@ class CrystalOptionsController: UIViewController {
         bElementChosen.text = suppliedList[1];
         xElementChosen.text = suppliedList[2];
         
+        let selectedElList = [aElementChosen.text!, bElementChosen.text!, xElementChosen.text!];
+        
         //calling my test class
-        let result = TestInit().Run();
+        let result = TestInit().Run(el1: selectedElList[0], el2: selectedElList[1], el3: selectedElList[2]);
         // Do any additional setup after loading the view.
         computedOutput.text = result;
     }

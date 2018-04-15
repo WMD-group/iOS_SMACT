@@ -21,7 +21,7 @@ public class TestDataLoader{
 public class TestInit{
     public init(){}
     
-    public func Run() -> String{
+    public func Run(el1: String, el2: String, el3: String) -> String{
         
         var resultingString : String = "";
         
@@ -37,10 +37,12 @@ public class TestInit{
 //        let elementMn = Element(symbol: "Mn");
 //        print(elementMn.concatObjectData());
         
-        let test_case1 = ["Na","Ti","F"];
-        let test_case2 = ["Na","K","Cl"];
-        let test_case3 = ["Fe","Cu","Cl"];
-        let test_cases = [test_case1, test_case2, test_case3];
+//        let test_case1 = ["Na","Ti","F"];
+//        let test_case2 = ["Na","K","Cl"];
+//        let test_case3 = ["Fe","Cu","Cl"];
+//        let test_cases = [test_case1, test_case2, test_case3];
+        let test_case1 = [el1, el2, el3];
+        let test_cases = [test_case1];
         
         for situation in test_cases{
             let max_amount = 5
