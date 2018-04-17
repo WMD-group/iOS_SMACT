@@ -22,6 +22,8 @@
 		48CB9EAC2082BC1300443AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CB9EAA2082BC1300443AAD /* Main.storyboard */; };
 		48CB9EAE2082BC1400443AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48CB9EAD2082BC1400443AAD /* Assets.xcassets */; };
 		48CB9EB12082BC1400443AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CB9EAF2082BC1400443AAD /* LaunchScreen.storyboard */; };
+		E4B728F920867C8300DB51FE /* RoundLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B728F820867C8300DB51FE /* RoundLabel.swift */; };
+		E4B728FB2086912C00DB51FE /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B728FA2086912C00DB51FE /* HomePageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		48CB9EAD2082BC1400443AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48CB9EB02082BC1400443AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48CB9EB22082BC1400443AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4B728F820867C8300DB51FE /* RoundLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundLabel.swift; sourceTree = "<group>"; };
+		E4B728FA2086912C00DB51FE /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				487EAF6C208350AF00A2D55B /* RoundButton.swift */,
+				E4B728F820867C8300DB51FE /* RoundLabel.swift */,
 			);
 			path = Stylers;
 			sourceTree = "<group>";
@@ -66,6 +71,7 @@
 		487EAF702083524300A2D55B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E4B728FA2086912C00DB51FE /* HomePageController.swift */,
 				48CB9EA82082BC1300443AAD /* ViewController.swift */,
 				487EAF73208356B400A2D55B /* PeriodicTableController.swift */,
 				488E65C2208363ED00AF1E1F /* CrystalOptionsController.swift */,
@@ -202,8 +208,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				487EAF6D208350AF00A2D55B /* RoundButton.swift in Sources */,
+				E4B728F920867C8300DB51FE /* RoundLabel.swift in Sources */,
 				487EAF792083583600A2D55B /* Tester.swift in Sources */,
 				487EAF7B2083583600A2D55B /* data_loader.swift in Sources */,
+				E4B728FB2086912C00DB51FE /* HomePageController.swift in Sources */,
 				488E65C3208363ED00AF1E1F /* CrystalOptionsController.swift in Sources */,
 				48CB9EA92082BC1300443AAD /* ViewController.swift in Sources */,
 				48CB9EA72082BC1300443AAD /* AppDelegate.swift in Sources */,
@@ -353,6 +361,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChemestyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -370,6 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChemestyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -35,15 +35,13 @@ class PeriodicTableController: UIViewController {
     //Mapping all the buttons to three seperate functions
     //Each function changes the label of either a, b or x
     
-    //a element selected
-    @IBAction func aElementPressed(_ sender: UIButton) {
+    /* SELECT A and B elements
+     * Green section of elements
+     */
+    @IBAction func abElementPressed(_ sender: UIButton) {
         aElementSelected.text = sender.titleLabel!.text;
     }
     
-    //b element selected
-    @IBAction func bElementPressed(_ sender: UIButton) {
-        bElementSelected.text = sender.titleLabel!.text;
-    }
     
     //x element selected
     @IBAction func xElementPressed(_ sender: UIButton) {
