@@ -8,6 +8,9 @@
 
 import UIKit
 
+var aBList : [ (UIButton, UILabel) ] = [];
+var availableSpace = 0;
+
 class PeriodicTableController: UIViewController {
 
     //Creating local variables to store labels value
@@ -15,10 +18,13 @@ class PeriodicTableController: UIViewController {
     @IBOutlet weak var bElementSelected: UILabel!
     @IBOutlet weak var xElementSelected: UILabel!
     
+    //Integer used to record how many buttons are pressed
+    var numberSelected = 0;
+    var aBElementLabels = [UILabel()];
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        aBElementLabels = [aElementSelected, bElementSelected];
         // Do any additional setup after loading the view.
     }
 
@@ -38,16 +44,35 @@ class PeriodicTableController: UIViewController {
     /* SELECT A and B elements
      * Green section of elements
      */
-    @IBAction func abElementPressed(_ sender: UIButton) {
-        aElementSelected.text = sender.titleLabel!.text;
-    }
-    
-    
-    //x element selected
-    @IBAction func xElementPressed(_ sender: UIButton) {
-        xElementSelected.text = sender.titleLabel!.text;
-    }
+    @IBAction func aBElementSelected(_ sender: UIButton) {
 
+        var broken = false;
+        for (button, label) in aBList{
+            if button.titleLabel == sender.titleLabel{
+                sender.backgroundColor = UIColor(red: -0.141793, green: 0.8178, blue: -0.0124199, alpha: 1);
+                label.text = "<Element>";
+                aBList = aBList.filter({ !($0 == button && $1 == label) });
+                availableSpace -= 1;
+                broken = true;
+            }
+        }
+        
+        if broken{ return; }
+
+        if aBList.count < 2{
+            aBList.append((sender, aBElementLabels[availableSpace]));
+            sender.backgroundColor = UIColor(red: 0, green: 0, blue: 1, alpha: 1);
+            aBElementLabels[aBList.count-1].text = sender.titleLabel!.text;
+            availableSpace += 1;
+        }else{
+            print("Cannot select more than 2 elements from A and B category")
+        }
+    }
+    
+    @IBAction func xElementSelected(_ sender: UIButton) {
+        xElementSelected.text = sender.titleLabel?.text;
+    }
+    
     //Function responcible for sending data to next page
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let crystalOptionsController = segue.destination as!  CrystalOptionsController;
