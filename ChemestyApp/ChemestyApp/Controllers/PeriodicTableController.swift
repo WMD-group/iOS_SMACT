@@ -8,8 +8,7 @@
 
 import UIKit
 
-var aBList : [ (UIButton, UILabel) ] = [];
-var availableSpace = 0;
+var aBList : [UIButton] = [];
 
 class PeriodicTableController: UIViewController {
 
@@ -45,28 +44,45 @@ class PeriodicTableController: UIViewController {
      * Green section of elements
      */
     @IBAction func aBElementSelected(_ sender: UIButton) {
-
+        
         var broken = false;
-        for (button, label) in aBList{
-            if button.titleLabel == sender.titleLabel{
-                sender.backgroundColor = UIColor(red: -0.141793, green: 0.8178, blue: -0.0124199, alpha: 1);
-                label.text = "<Element>";
-                aBList = aBList.filter({ !($0 == button && $1 == label) });
-                availableSpace -= 1;
-                broken = true;
-            }
+        if aBList.contains(sender){
+            sender.backgroundColor = UIColor(red: -0.141793, green: 0.8178, blue: -0.0124199, alpha: 1);
+            aBList = aBList.filter({ !($0 == sender) });
+            broken = true;
+        }
+        if aBList.count == 0{
+            aElementSelected.text = "<1>";
+            bElementSelected.text = "<2>";
+        }else if aBList.count == 1{
+            aElementSelected.text = aBList[0].titleLabel!.text;
+            bElementSelected.text = "<2>";
+        }else{
+            aElementSelected.text = aBList[0].titleLabel!.text;
+            bElementSelected.text = aBList[1].titleLabel!.text;
         }
         
         if broken{ return; }
 
         if aBList.count < 2{
-            aBList.append((sender, aBElementLabels[availableSpace]));
+            aBList.append(sender);
             sender.backgroundColor = UIColor(red: 0, green: 0, blue: 1, alpha: 1);
-            aBElementLabels[aBList.count-1].text = sender.titleLabel!.text;
-            availableSpace += 1;
+//            aBElementLabels[aBList.count-1].text = sender.titleLabel!.text;
         }else{
             print("Cannot select more than 2 elements from A and B category")
         }
+        
+        if aBList.count == 0{
+            aElementSelected.text = "<1>";
+            bElementSelected.text = "<2>";
+        }else if aBList.count == 1{
+            aElementSelected.text = aBList[0].titleLabel!.text;
+            bElementSelected.text = "<2>";
+        }else{
+            aElementSelected.text = aBList[0].titleLabel!.text;
+            bElementSelected.text = aBList[1].titleLabel!.text;
+        }
+       
     }
     
     @IBAction func xElementSelected(_ sender: UIButton) {
