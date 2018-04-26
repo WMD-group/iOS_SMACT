@@ -337,7 +337,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="backButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k3Y-KR-fhG"/>
+                                    <action selector="backButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3LR-Ba-WTi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gt-Mz-Vqe" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
@@ -1318,7 +1318,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zu-Vq-iiQ" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
-                                <rect key="frame" x="102" y="621" width="148" height="74"/>
+                                <rect key="frame" x="76" y="618" width="148" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
@@ -1327,8 +1327,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="backButton:" destination="6Ja-g1-QVc" eventType="touchUpInside" id="Z8i-y0-jrH"/>
-                                    <action selector="navigateCrystalOptions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zQG-zb-TUa"/>
+                                    <action selector="BackButton:" destination="6Ja-g1-QVc" eventType="touchUpInside" id="dSc-23-Qix"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1424,7 +1423,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="BackButton:" destination="4OZ-l1-vyX" eventType="touchUpInside" id="UlG-R9-O5k"/>
+                                    <action selector="BackButton:" destination="4OZ-l1-vyX" eventType="touchUpInside" id="5aj-3p-qmv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1462,7 +1461,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="BackButton:" destination="BfA-ll-YoD" eventType="touchUpInside" id="Foq-pe-bEt"/>
-                                    <action selector="BackButton:" destination="4OZ-l1-vyX" eventType="touchUpInside" id="t4Z-he-x0R"/>
                                 </connections>
                             </button>
                         </subviews>

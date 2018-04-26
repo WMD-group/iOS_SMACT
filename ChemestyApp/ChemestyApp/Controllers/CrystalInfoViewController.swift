@@ -21,11 +21,9 @@ class CrystalInfoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    //BackButton
     @IBAction func BackButton(_ sender: Any) {
         dismiss(animated: true, completion: nil);
-        
     }
     
-
 }
