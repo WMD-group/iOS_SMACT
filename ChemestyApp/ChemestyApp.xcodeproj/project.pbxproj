@@ -24,6 +24,13 @@
 		48CB9EB12082BC1400443AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CB9EAF2082BC1400443AAD /* LaunchScreen.storyboard */; };
 		E4B728F920867C8300DB51FE /* RoundLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B728F820867C8300DB51FE /* RoundLabel.swift */; };
 		E4B728FB2086912C00DB51FE /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B728FA2086912C00DB51FE /* HomePageController.swift */; };
+		E4B729032091D43500DB51FE /* CrystalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B729022091D43500DB51FE /* CrystalInfoViewController.swift */; };
+		E4B7290B20920F8800DB51FE /* Robot.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B7290A20920F8800DB51FE /* Robot.png */; };
+		E4B7290E2092103500DB51FE /* combinations_graph_log_scale_preview.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B7290D2092103500DB51FE /* combinations_graph_log_scale_preview.png */; };
+		E4B729102092114B00DB51FE /* Perovskite example.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B7290F2092114B00DB51FE /* Perovskite example.png */; };
+		E4B7291620921E5E00DB51FE /* MatApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B7291520921E5E00DB51FE /* MatApplicationViewController.swift */; };
+		E4B729192092301000DB51FE /* speech_bubble1.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B729182092301000DB51FE /* speech_bubble1.png */; };
+		E4B7291B209230E200DB51FE /* CustomisePerovskiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B7291A209230E200DB51FE /* CustomisePerovskiteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +53,14 @@
 		48CB9EB22082BC1400443AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4B728F820867C8300DB51FE /* RoundLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundLabel.swift; sourceTree = "<group>"; };
 		E4B728FA2086912C00DB51FE /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
+		E4B729022091D43500DB51FE /* CrystalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrystalInfoViewController.swift; sourceTree = "<group>"; };
+		E4B7290A20920F8800DB51FE /* Robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Robot.png; sourceTree = "<group>"; };
+		E4B7290C20920F8B00DB51FE /* SpeechBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpeechBubble.png; sourceTree = "<group>"; };
+		E4B7290D2092103500DB51FE /* combinations_graph_log_scale_preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = combinations_graph_log_scale_preview.png; sourceTree = "<group>"; };
+		E4B7290F2092114B00DB51FE /* Perovskite example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Perovskite example.png"; sourceTree = "<group>"; };
+		E4B7291520921E5E00DB51FE /* MatApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatApplicationViewController.swift; sourceTree = "<group>"; };
+		E4B729182092301000DB51FE /* speech_bubble1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speech_bubble1.png; sourceTree = SOURCE_ROOT; };
+		E4B7291A209230E200DB51FE /* CustomisePerovskiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomisePerovskiteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +87,12 @@
 			isa = PBXGroup;
 			children = (
 				E4B728FA2086912C00DB51FE /* HomePageController.swift */,
+				E4B7291520921E5E00DB51FE /* MatApplicationViewController.swift */,
 				48CB9EA82082BC1300443AAD /* ViewController.swift */,
 				487EAF73208356B400A2D55B /* PeriodicTableController.swift */,
 				488E65C2208363ED00AF1E1F /* CrystalOptionsController.swift */,
+				E4B729022091D43500DB51FE /* CrystalInfoViewController.swift */,
+				E4B7291A209230E200DB51FE /* CustomisePerovskiteViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -103,6 +121,7 @@
 		48CB9E9A2082BC1300443AAD = {
 			isa = PBXGroup;
 			children = (
+				E4B7291720922FF100DB51FE /* Images */,
 				48CB9EA52082BC1300443AAD /* ChemestyApp */,
 				48CB9EA42082BC1300443AAD /* Products */,
 			);
@@ -130,6 +149,18 @@
 				48CB9EB22082BC1400443AAD /* Info.plist */,
 			);
 			path = ChemestyApp;
+			sourceTree = "<group>";
+		};
+		E4B7291720922FF100DB51FE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E4B729182092301000DB51FE /* speech_bubble1.png */,
+				E4B7290F2092114B00DB51FE /* Perovskite example.png */,
+				E4B7290D2092103500DB51FE /* combinations_graph_log_scale_preview.png */,
+				E4B7290A20920F8800DB51FE /* Robot.png */,
+				E4B7290C20920F8B00DB51FE /* SpeechBubble.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,13 +221,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4B7290B20920F8800DB51FE /* Robot.png in Resources */,
+				E4B729192092301000DB51FE /* speech_bubble1.png in Resources */,
 				48CB9EB12082BC1400443AAD /* LaunchScreen.storyboard in Resources */,
 				48CB9EAE2082BC1400443AAD /* Assets.xcassets in Resources */,
+				E4B7290E2092103500DB51FE /* combinations_graph_log_scale_preview.png in Resources */,
 				487EAF832083586C00A2D55B /* oxidation_states.txt in Resources */,
 				487EAF842083586C00A2D55B /* SSE.csv in Resources */,
 				487EAF812083586C00A2D55B /* HHIs.txt in Resources */,
 				487EAF822083586C00A2D55B /* element_data.txt in Resources */,
 				48CB9EAC2082BC1300443AAD /* Main.storyboard in Resources */,
+				E4B729102092114B00DB51FE /* Perovskite example.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,10 +247,13 @@
 				487EAF792083583600A2D55B /* Tester.swift in Sources */,
 				487EAF7B2083583600A2D55B /* data_loader.swift in Sources */,
 				E4B728FB2086912C00DB51FE /* HomePageController.swift in Sources */,
+				E4B7291B209230E200DB51FE /* CustomisePerovskiteViewController.swift in Sources */,
 				488E65C3208363ED00AF1E1F /* CrystalOptionsController.swift in Sources */,
+				E4B729032091D43500DB51FE /* CrystalInfoViewController.swift in Sources */,
 				48CB9EA92082BC1300443AAD /* ViewController.swift in Sources */,
 				48CB9EA72082BC1300443AAD /* AppDelegate.swift in Sources */,
 				487EAF74208356B400A2D55B /* PeriodicTableController.swift in Sources */,
+				E4B7291620921E5E00DB51FE /* MatApplicationViewController.swift in Sources */,
 				487EAF7A2083583600A2D55B /* __initi__.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
