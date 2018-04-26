@@ -9,6 +9,7 @@
 import UIKit
 
 var aBList : [UIButton] = [];
+var xElementList : [UIButton] = [];
 
 class PeriodicTableController: UIViewController {
 
@@ -21,12 +22,19 @@ class PeriodicTableController: UIViewController {
     var numberSelected = 0;
     var aBElementLabels = [UILabel()];
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         aBElementLabels = [aElementSelected, bElementSelected];
         // Do any additional setup after loading the view.
     }
 
+    func resetVariables (){
+        print("Reset Vars")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -34,6 +42,11 @@ class PeriodicTableController: UIViewController {
 //    //Function mapped to "Let's Go" button
     @IBAction func navigateCrystalOptions(_ sender: Any) {
         //preform check to make sure that the three elements have been slected
+        let list = [aElementSelected.text, bElementSelected.text, xElementSelected.text];
+        if list.contains("<1>") || list.contains("<2>") || list.contains("<3>"){
+            
+            return;
+        }
         performSegue(withIdentifier: "crystalOptionsNav", sender: self);
     }
     
@@ -86,18 +99,37 @@ class PeriodicTableController: UIViewController {
     }
     
     @IBAction func xElementSelected(_ sender: UIButton) {
-        xElementSelected.text = sender.titleLabel?.text;
+        
+        if xElementList.contains(sender){
+            sender.backgroundColor = UIColor(red: 1, green: 0.149131, blue: 0, alpha: 1);
+            xElementList = xElementList.filter({ !($0 == sender)});
+            xElementSelected.text = "<3>";
+        }else if xElementList.count == 0{
+            xElementList.append(sender);
+            sender.backgroundColor = UIColor(red: 0, green: 0, blue: 1, alpha: 1);
+            xElementSelected.text = sender.titleLabel?.text;
+        }else{
+            print("Cannot select more than one x element")
+        }
     }
     
     //Function responcible for sending data to next page
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let crystalOptionsController = segue.destination as!  CrystalOptionsController;
-        
         //preform check to make sure the data is not null
         let list = [aElementSelected.text, bElementSelected.text, xElementSelected.text];
         crystalOptionsController.suppliedList = list as! [String]; //enforcing the type to be list of string
+    }
+    
+    
+    //Back Button
+    @IBAction func backButton(_ sender: Any) {
+        
+        dismiss(animated: true, completion: nil);
         
     }
+    
+    
     /*
     // MARK: - Navigation
 
