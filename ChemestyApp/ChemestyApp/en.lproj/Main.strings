@@ -1,0 +1,327 @@
+
+/* Class = "UILabel"; text = "<2>"; ObjectID = "1bw-uQ-GK2"; */
+"1bw-uQ-GK2.text" = "<2>";
+
+/* Class = "UIButton"; normalTitle = "Rh"; ObjectID = "2Hm-pd-QUn"; */
+"2Hm-pd-QUn.normalTitle" = "Rh";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "2Zu-Vq-iiQ"; */
+"2Zu-Vq-iiQ.normalTitle" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Sn"; ObjectID = "363-r2-hne"; */
+"363-r2-hne.normalTitle" = "Sn";
+
+/* Class = "UIButton"; normalTitle = "Cd"; ObjectID = "3bD-3e-J1j"; */
+"3bD-3e-J1j.normalTitle" = "Cd";
+
+/* Class = "UIButton"; normalTitle = "Ni"; ObjectID = "4QQ-iy-fw6"; */
+"4QQ-iy-fw6.normalTitle" = "Ni";
+
+/* Class = "UILabel"; text = "Hi, I'm Thomas! Let's see if we can design a new material together! But first, we'll need to find out a little bit more about current materials. Click below to get started!"; ObjectID = "5KA-8M-jkC"; */
+"5KA-8M-jkC.text" = "Hi, I'm Thomas! Let's see if we can design a new material together! But first, we'll need to find out a little bit more about current materials. Click below to get started!";
+
+/* Class = "UILabel"; text = "<1>"; ObjectID = "61t-xm-tpe"; */
+"61t-xm-tpe.text" = "<1>";
+
+/* Class = "UILabel"; text = "Ra"; ObjectID = "7xX-JZ-w4Y"; */
+"7xX-JZ-w4Y.text" = "Ra";
+
+/* Class = "UIButton"; normalTitle = "Al"; ObjectID = "80s-C3-bAJ"; */
+"80s-C3-bAJ.normalTitle" = "Al";
+
+/* Class = "UILabel"; text = "Po"; ObjectID = "8dp-sA-fZ8"; */
+"8dp-sA-fZ8.text" = "Po";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "8gt-Mz-Vqe"; */
+"8gt-Mz-Vqe.normalTitle" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Na"; ObjectID = "9Kp-k9-NY4"; */
+"9Kp-k9-NY4.normalTitle" = "Na";
+
+/* Class = "UILabel"; text = "Perovskites are really popular at the moment in research because they often interact with light and electricity in useful and interesting ways. "; ObjectID = "9Ye-FW-9gh"; */
+"9Ye-FW-9gh.text" = "Perovskites are really popular at the moment in research because they often interact with light and electricity in useful and interesting ways. ";
+
+/* Class = "UIButton"; normalTitle = "I"; ObjectID = "AE3-Yu-aGV"; */
+"AE3-Yu-aGV.normalTitle" = "I";
+
+/* Class = "UIButton"; normalTitle = "Known Materials"; ObjectID = "Avw-yq-TVo"; */
+"Avw-yq-TVo.normalTitle" = "Known Materials";
+
+/* Class = "UIButton"; normalTitle = "Pt"; ObjectID = "Ayb-Dq-nkj"; */
+"Ayb-Dq-nkj.normalTitle" = "Pt";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "BSc-rG-fuQ"; */
+"BSc-rG-fuQ.normalTitle" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Sb"; ObjectID = "BZV-yh-EFO"; */
+"BZV-yh-EFO.normalTitle" = "Sb";
+
+/* Class = "UILabel"; text = "<3>"; ObjectID = "BaY-J5-KDG"; */
+"BaY-J5-KDG.text" = "<3>";
+
+/* Class = "UIButton"; normalTitle = "W"; ObjectID = "Ckg-jd-Oya"; */
+"Ckg-jd-Oya.normalTitle" = "W";
+
+/* Class = "UILabel"; text = "Calculating Structure"; ObjectID = "CuI-FQ-t5g"; */
+"CuI-FQ-t5g.text" = "Calculating Structure";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "DTN-UH-U4I"; */
+"DTN-UH-U4I.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "<2>"; ObjectID = "EmV-hk-xqU"; */
+"EmV-hk-xqU.text" = "<2>";
+
+/* Class = "UIButton"; normalTitle = "Bi"; ObjectID = "FCv-MP-V3B"; */
+"FCv-MP-V3B.normalTitle" = "Bi";
+
+/* Class = "UIButton"; normalTitle = "Cs"; ObjectID = "FWV-Tl-011"; */
+"FWV-Tl-011.normalTitle" = "Cs";
+
+/* Class = "UILabel"; text = "This is the Perovskite structure. There are only 3 ingredients called A, B and X. A and B are normally metal elements, while X is a non-metal. They always have the chemical formula ABX3."; ObjectID = "FcU-QZ-Ayw"; */
+"FcU-QZ-Ayw.text" = "This is the Perovskite structure. There are only 3 ingredients called A, B and X. A and B are normally metal elements, while X is a non-metal. They always have the chemical formula ABX3.";
+
+/* Class = "UIButton"; normalTitle = "V"; ObjectID = "FoR-de-W1X"; */
+"FoR-de-W1X.normalTitle" = "V";
+
+/* Class = "UILabel"; text = "Designing new materials is really important. They are the key to creating new technology like solar cells, batteries and superconductors. "; ObjectID = "GsV-h8-MBD"; */
+"GsV-h8-MBD.text" = "Designing new materials is really important. They are the key to creating new technology like solar cells, batteries and superconductors. ";
+
+/* Class = "UIButton"; normalTitle = "Fe"; ObjectID = "HqO-Sj-wgu"; */
+"HqO-Sj-wgu.normalTitle" = "Fe";
+
+/* Class = "UIButton"; normalTitle = "Sr"; ObjectID = "Hsh-cI-bKH"; */
+"Hsh-cI-bKH.normalTitle" = "Sr";
+
+/* Class = "UILabel"; text = "3D perovskite"; ObjectID = "IN4-wQ-fMg"; */
+"IN4-wQ-fMg.text" = "3D perovskite";
+
+/* Class = "UILabel"; text = "Computed output"; ObjectID = "K7R-pf-JZT"; */
+"K7R-pf-JZT.text" = "Computed output";
+
+/* Class = "UILabel"; text = "The Materials Map"; ObjectID = "Kdo-Cw-iqa"; */
+"Kdo-Cw-iqa.text" = "The Materials Map";
+
+/* Class = "UILabel"; text = "C"; ObjectID = "LZi-So-33F"; */
+"LZi-So-33F.text" = "C";
+
+/* Class = "UILabel"; text = "A"; ObjectID = "Lsx-0C-yeY"; */
+"Lsx-0C-yeY.text" = "A";
+
+/* Class = "UILabel"; text = "Perovskite Materials"; ObjectID = "M7x-cl-HRL"; */
+"M7x-cl-HRL.text" = "Perovskite Materials";
+
+/* Class = "UILabel"; text = "Choose 2 metals from the blue section and 1 non-metal element from the orange section. Let's see if we can find a new Perovskite structure!"; ObjectID = "NbY-4O-6zP"; */
+"NbY-4O-6zP.text" = "Choose 2 metals from the blue section and 1 non-metal element from the orange section. Let's see if we can find a new Perovskite structure!";
+
+/* Class = "UIButton"; normalTitle = "Ag"; ObjectID = "Noi-ol-gIy"; */
+"Noi-ol-gIy.normalTitle" = "Ag";
+
+/* Class = "UIButton"; normalTitle = "Mn"; ObjectID = "Nt5-PY-FME"; */
+"Nt5-PY-FME.normalTitle" = "Mn";
+
+/* Class = "UIButton"; normalTitle = "Ca"; ObjectID = "OTV-as-cnJ"; */
+"OTV-as-cnJ.normalTitle" = "Ca";
+
+/* Class = "UILabel"; text = "At"; ObjectID = "OV8-PN-d8U"; */
+"OV8-PN-d8U.text" = "At";
+
+/* Class = "UILabel"; text = "Fr"; ObjectID = "Oh3-XK-IWU"; */
+"Oh3-XK-IWU.text" = "Fr";
+
+/* Class = "UIButton"; normalTitle = "Mo"; ObjectID = "PES-xE-6bh"; */
+"PES-xE-6bh.normalTitle" = "Mo";
+
+/* Class = "UILabel"; text = "As"; ObjectID = "Qmr-nN-UIe"; */
+"Qmr-nN-UIe.text" = "As";
+
+/* Class = "UILabel"; text = "Wow, these Perovskite sound cool! Let's see if we can choose some elements to make a new one! "; ObjectID = "QzW-ZH-Ede"; */
+"QzW-ZH-Ede.text" = "Wow, these Perovskite sound cool! Let's see if we can choose some elements to make a new one! ";
+
+/* Class = "UIButton"; normalTitle = "Se"; ObjectID = "R6l-6L-Fba"; */
+"R6l-6L-Fba.normalTitle" = "Se";
+
+/* Class = "UIButton"; normalTitle = "Ti"; ObjectID = "RTX-ei-ut5"; */
+"RTX-ei-ut5.normalTitle" = "Ti";
+
+/* Class = "UILabel"; text = "Chosen Elements:"; ObjectID = "Rsk-uR-Qja"; */
+"Rsk-uR-Qja.text" = "Chosen Elements:";
+
+/* Class = "UILabel"; text = "B"; ObjectID = "SQZ-hQ-tIJ"; */
+"SQZ-hQ-tIJ.text" = "B";
+
+/* Class = "UIButton"; normalTitle = "Li"; ObjectID = "Ujn-wR-jQW"; */
+"Ujn-wR-jQW.normalTitle" = "Li";
+
+/* Class = "UILabel"; text = "H"; ObjectID = "Uod-1N-D1U"; */
+"Uod-1N-D1U.text" = "H";
+
+/* Class = "UIButton"; normalTitle = "Ga"; ObjectID = "Vlt-Dm-KiI"; */
+"Vlt-Dm-KiI.normalTitle" = "Ga";
+
+/* Class = "UIButton"; normalTitle = "Ru"; ObjectID = "XAC-Ge-uvX"; */
+"XAC-Ge-uvX.normalTitle" = "Ru";
+
+/* Class = "UIButton"; normalTitle = "Zr"; ObjectID = "XJB-lZ-Lcr"; */
+"XJB-lZ-Lcr.normalTitle" = "Zr";
+
+/* Class = "UIButton"; normalTitle = "O"; ObjectID = "XiC-ch-ke5"; */
+"XiC-ch-ke5.normalTitle" = "O";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Yja-Lm-Nj1"; */
+"Yja-Lm-Nj1.normalTitle" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Ir"; ObjectID = "Yo2-yx-0ug"; */
+"Yo2-yx-0ug.normalTitle" = "Ir";
+
+/* Class = "UIButton"; normalTitle = "Os"; ObjectID = "ZBB-5M-yvw"; */
+"ZBB-5M-yvw.normalTitle" = "Os";
+
+/* Class = "UIButton"; normalTitle = "F"; ObjectID = "ZWh-o3-BId"; */
+"ZWh-o3-BId.normalTitle" = "F";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "ZYW-Ml-ScN"; */
+"ZYW-Ml-ScN.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "B"; ObjectID = "Zuk-5G-SN3"; */
+"Zuk-5G-SN3.text" = "B";
+
+/* Class = "UIButton"; normalTitle = "Ba"; ObjectID = "avx-XD-JnF"; */
+"avx-XD-JnF.normalTitle" = "Ba";
+
+/* Class = "UILabel"; text = "N"; ObjectID = "bkV-dk-Jvj"; */
+"bkV-dk-Jvj.text" = "N";
+
+/* Class = "UIButton"; normalTitle = "Unexplored Territory"; ObjectID = "c1m-8M-Q8g"; */
+"c1m-8M-Q8g.normalTitle" = "Unexplored Territory";
+
+/* Class = "UILabel"; text = " Pseudocode: Calculating all possible oxidation states...."; ObjectID = "c6H-uk-xT9"; */
+"c6H-uk-xT9.text" = " Pseudocode: Calculating all possible oxidation states....";
+
+/* Class = "UIButton"; normalTitle = "In"; ObjectID = "cDs-7g-faD"; */
+"cDs-7g-faD.normalTitle" = "In";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "dHJ-G4-tPW"; */
+"dHJ-G4-tPW.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "La"; ObjectID = "dRA-qv-9sc"; */
+"dRA-qv-9sc.text" = "La";
+
+/* Class = "UIButton"; normalTitle = "Hg"; ObjectID = "dh8-qT-GVk"; */
+"dh8-qT-GVk.normalTitle" = "Hg";
+
+/* Class = "UIButton"; normalTitle = "Mg"; ObjectID = "e79-ud-gsQ"; */
+"e79-ud-gsQ.normalTitle" = "Mg";
+
+/* Class = "UILabel"; text = "P"; ObjectID = "fKf-vI-JMh"; */
+"fKf-vI-JMh.text" = "P";
+
+/* Class = "UIButton"; normalTitle = "Tc"; ObjectID = "fy7-Et-XDH"; */
+"fy7-Et-XDH.normalTitle" = "Tc";
+
+/* Class = "UILabel"; text = "Your chosen elements:"; ObjectID = "g2g-Px-c7Q"; */
+"g2g-Px-c7Q.text" = "Your chosen elements:";
+
+/* Class = "UIButton"; normalTitle = "Nb"; ObjectID = "g38-ga-18S"; */
+"g38-ga-18S.normalTitle" = "Nb";
+
+/* Class = "UIButton"; normalTitle = "X"; ObjectID = "gVK-Hv-sY5"; */
+"gVK-Hv-sY5.normalTitle" = "X";
+
+/* Class = "UILabel"; text = "<3>"; ObjectID = "ga5-Zp-oK2"; */
+"ga5-Zp-oK2.text" = "<3>";
+
+/* Class = "UIButton"; normalTitle = "Sc"; ObjectID = "gkC-Wp-KMy"; */
+"gkC-Wp-KMy.normalTitle" = "Sc";
+
+/* Class = "UIButton"; normalTitle = "Y"; ObjectID = "gyt-1j-nfE"; */
+"gyt-1j-nfE.normalTitle" = "Y";
+
+/* Class = "UILabel"; text = "Scientists  think  that  less  than  1%  of  1%  of  1%  of  the  possible  materials  space  has  actually  been  explored!  Somewhere  in  the  unexplored  space  could  be  the  best  new  solar  cell,  battery  or  superconductor  material  of  tomorrow.  Maybe  we’ll  discover  it  today!"; ObjectID = "hWl-Dw-TAv"; */
+"hWl-Dw-TAv.text" = "Scientists  think  that  less  than  1%  of  1%  of  1%  of  the  possible  materials  space  has  actually  been  explored!  Somewhere  in  the  unexplored  space  could  be  the  best  new  solar  cell,  battery  or  superconductor  material  of  tomorrow.  Maybe  we’ll  discover  it  today!";
+
+/* Class = "UIButton"; normalTitle = "Co"; ObjectID = "i6Q-wb-C6l"; */
+"i6Q-wb-C6l.normalTitle" = "Co";
+
+/* Class = "UIButton"; normalTitle = "Pd"; ObjectID = "jzi-fk-HKD"; */
+"jzi-fk-HKD.normalTitle" = "Pd";
+
+/* Class = "UIButton"; normalTitle = "Cu"; ObjectID = "lhE-8D-ZDw"; */
+"lhE-8D-ZDw.normalTitle" = "Cu";
+
+/* Class = "UILabel"; text = "Your Crystal"; ObjectID = "lzC-aZ-r5i"; */
+"lzC-aZ-r5i.text" = "Your Crystal";
+
+/* Class = "UIButton"; normalTitle = "Begin"; ObjectID = "mBb-KD-vDt"; */
+"mBb-KD-vDt.normalTitle" = "Begin";
+
+/* Class = "UIButton"; normalTitle = "Re"; ObjectID = "mlg-ST-KjV"; */
+"mlg-ST-KjV.normalTitle" = "Re";
+
+/* Class = "UILabel"; text = "There are thousands of different materials that we use every day, but they all have the same basic building blocks or \"elements\". Here, you can design a brand new material using these building blocks!"; ObjectID = "moE-5o-9nx"; */
+"moE-5o-9nx.text" = "There are thousands of different materials that we use every day, but they all have the same basic building blocks or \"elements\". Here, you can design a brand new material using these building blocks!";
+
+/* Class = "UIButton"; normalTitle = "X"; ObjectID = "nOp-yq-vEz"; */
+"nOp-yq-vEz.normalTitle" = "X";
+
+/* Class = "UIButton"; normalTitle = "Cl"; ObjectID = "nkz-MJ-yol"; */
+"nkz-MJ-yol.normalTitle" = "Cl";
+
+/* Class = "UIButton"; normalTitle = "S"; ObjectID = "oAg-Gb-LgS"; */
+"oAg-Gb-LgS.normalTitle" = "S";
+
+/* Class = "UIButton"; normalTitle = "Tl"; ObjectID = "oiY-DT-bpB"; */
+"oiY-DT-bpB.normalTitle" = "Tl";
+
+/* Class = "UIButton"; normalTitle = "Br"; ObjectID = "ojV-94-FrE"; */
+"ojV-94-FrE.normalTitle" = "Br";
+
+/* Class = "UILabel"; text = "Choose your elements"; ObjectID = "ou4-OW-K28"; */
+"ou4-OW-K28.text" = "Choose your elements";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "pdR-GO-HCB"; */
+"pdR-GO-HCB.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "The Materials Discovery Challenge"; ObjectID = "pqW-gb-cSI"; */
+"pqW-gb-cSI.text" = "The Materials Discovery Challenge";
+
+/* Class = "UIButton"; normalTitle = "Ge"; ObjectID = "psy-ve-Hcx"; */
+"psy-ve-Hcx.normalTitle" = "Ge";
+
+/* Class = "UIButton"; normalTitle = "Te"; ObjectID = "r4j-sP-OME"; */
+"r4j-sP-OME.normalTitle" = "Te";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "ryN-Vz-w3h"; */
+"ryN-Vz-w3h.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "X"; ObjectID = "t0w-Q7-RCk"; */
+"t0w-Q7-RCk.text" = "X";
+
+/* Class = "UIButton"; normalTitle = "K"; ObjectID = "uKl-pL-dia"; */
+"uKl-pL-dia.normalTitle" = "K";
+
+/* Class = "UIButton"; normalTitle = "Au"; ObjectID = "un2-nk-IzZ"; */
+"un2-nk-IzZ.normalTitle" = "Au";
+
+/* Class = "UIButton"; normalTitle = "Be"; ObjectID = "vVq-e2-s6f"; */
+"vVq-e2-s6f.normalTitle" = "Be";
+
+/* Class = "UILabel"; text = "Si"; ObjectID = "vgF-ci-GeF"; */
+"vgF-ci-GeF.text" = "Si";
+
+/* Class = "UILabel"; text = "<1>"; ObjectID = "wYV-Sh-xbE"; */
+"wYV-Sh-xbE.text" = "<1>";
+
+/* Class = "UIButton"; normalTitle = "Rb"; ObjectID = "wfg-tb-AYu"; */
+"wfg-tb-AYu.normalTitle" = "Rb";
+
+/* Class = "UIButton"; normalTitle = "Pb"; ObjectID = "xjq-AV-cmZ"; */
+"xjq-AV-cmZ.normalTitle" = "Pb";
+
+/* Class = "UIButton"; normalTitle = "Cr"; ObjectID = "yUU-4U-gKs"; */
+"yUU-4U-gKs.normalTitle" = "Cr";
+
+/* Class = "UIButton"; normalTitle = "Zn"; ObjectID = "z1O-bE-qSP"; */
+"z1O-bE-qSP.normalTitle" = "Zn";
+
+/* Class = "UIButton"; normalTitle = "Ta"; ObjectID = "zSc-0n-ySd"; */
+"zSc-0n-ySd.normalTitle" = "Ta";
