@@ -1,14 +1,14 @@
 //
-//  HomePageController.swift
+//  homePageViewController.swift
 //  ChemestyApp
 //
-//  Created by Sophie on 17/04/2018.
+//  Created by Sophie on 08/06/2018.
 //  Copyright © 2018 Edward Attard Montalto. All rights reserved.
 //
 
 import UIKit
 
-class HomePageController: UIViewController {
+class HomePageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,9 @@ class HomePageController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
     
 
     /*

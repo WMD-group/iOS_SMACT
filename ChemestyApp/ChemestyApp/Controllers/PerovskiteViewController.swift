@@ -1,5 +1,5 @@
 //
-//  MatApplicationViewController.swift
+//  PerovskiteViewController.swift
 //  ChemestyApp
 //
 //  Created by Sophie on 26/04/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MatApplicationViewController: UIViewController {
+class PerovskiteViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
