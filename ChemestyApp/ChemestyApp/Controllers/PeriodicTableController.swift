@@ -54,7 +54,7 @@ class PeriodicTableController: UIViewController {
     //Each function changes the label of either a, b or x
     
     /* SELECT A and B elements
-     * Green section of elements
+     * Blue section of elements
      */
     @IBAction func aBElementSelected(_ sender: UIButton) {
         

@@ -21,6 +21,8 @@
 		48CB9EAC2082BC1300443AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CB9EAA2082BC1300443AAD /* Main.storyboard */; };
 		48CB9EAE2082BC1400443AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48CB9EAD2082BC1400443AAD /* Assets.xcassets */; };
 		48CB9EB12082BC1400443AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CB9EAF2082BC1400443AAD /* LaunchScreen.storyboard */; };
+		E455706220D0267000FF91C4 /* Click_X_fig_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E455706020D0266F00FF91C4 /* Click_X_fig_2.png */; };
+		E455706320D0267000FF91C4 /* Click_X_fig_1.png in Resources */ = {isa = PBXBuildFile; fileRef = E455706120D0266F00FF91C4 /* Click_X_fig_1.png */; };
 		E4B728F920867C8300DB51FE /* RoundLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B728F820867C8300DB51FE /* RoundLabel.swift */; };
 		E4B729032091D43500DB51FE /* CrystalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B729022091D43500DB51FE /* CrystalInfoViewController.swift */; };
 		E4B7290B20920F8800DB51FE /* Robot.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B7290A20920F8800DB51FE /* Robot.png */; };
@@ -49,6 +51,8 @@
 		48CB9EAD2082BC1400443AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48CB9EB02082BC1400443AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48CB9EB22082BC1400443AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E455706020D0266F00FF91C4 /* Click_X_fig_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Click_X_fig_2.png; path = ChemestyApp/Images/Click_X_fig_2.png; sourceTree = SOURCE_ROOT; };
+		E455706120D0266F00FF91C4 /* Click_X_fig_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Click_X_fig_1.png; path = ChemestyApp/Images/Click_X_fig_1.png; sourceTree = SOURCE_ROOT; };
 		E4B728F820867C8300DB51FE /* RoundLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundLabel.swift; sourceTree = "<group>"; };
 		E4B729022091D43500DB51FE /* CrystalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrystalInfoViewController.swift; sourceTree = "<group>"; };
 		E4B7290A20920F8800DB51FE /* Robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Robot.png; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 		E4B7291720922FF100DB51FE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E455706120D0266F00FF91C4 /* Click_X_fig_1.png */,
+				E455706020D0266F00FF91C4 /* Click_X_fig_2.png */,
 				E4B729182092301000DB51FE /* speech_bubble1.png */,
 				E4B7290F2092114B00DB51FE /* Perovskite example.png */,
 				E4B7290D2092103500DB51FE /* combinations_graph_log_scale_preview.png */,
@@ -221,7 +227,9 @@
 				E4B7290B20920F8800DB51FE /* Robot.png in Resources */,
 				E4B729192092301000DB51FE /* speech_bubble1.png in Resources */,
 				48CB9EB12082BC1400443AAD /* LaunchScreen.storyboard in Resources */,
+				E455706220D0267000FF91C4 /* Click_X_fig_2.png in Resources */,
 				48CB9EAE2082BC1400443AAD /* Assets.xcassets in Resources */,
+				E455706320D0267000FF91C4 /* Click_X_fig_1.png in Resources */,
 				E4B7290E2092103500DB51FE /* combinations_graph_log_scale_preview.png in Resources */,
 				487EAF832083586C00A2D55B /* oxidation_states.txt in Resources */,
 				487EAF842083586C00A2D55B /* SSE.csv in Resources */,
