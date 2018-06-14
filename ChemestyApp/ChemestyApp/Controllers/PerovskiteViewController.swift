@@ -21,31 +21,31 @@ class PerovskiteViewController: UIViewController {
 //        let scene = SCNScene();
         let scene = SCNScene(named: "3DPerovskite.dae")!;
         
-        let cameraNode = SCNNode();
-        cameraNode.camera = SCNCamera();
-        scene.rootNode.addChildNode(cameraNode);
-        cameraNode.position = SCNVector3(x:70, y:0, z:120);
-        cameraNode.camera!.zFar = 200;
-//        cameraNode.look(at: SCNVector3(x:0, y:0, z: 0));
-        
-        //adding light to the scene
-        let lightNode = SCNNode();
-        lightNode.light = SCNLight();
-        lightNode.light!.type = SCNLight.LightType.directional;
-        lightNode.position = SCNVector3(x: 70, y: 0, z: 120);
+//        let cameraNode = SCNNode();
+//        cameraNode.camera = SCNCamera();
+//        scene.rootNode.addChildNode(cameraNode);
+//        cameraNode.position = SCNVector3(x:70, y:0, z:120);
+//        cameraNode.camera!.zFar = 200;
+////        cameraNode.look(at: SCNVector3(x:0, y:0, z: 0));
+//        
+//        //adding light to the scene
+//        let lightNode = SCNNode();
+//        lightNode.light = SCNLight();
+//        lightNode.light!.type = SCNLight.LightType.directional;
+////        lightNode.position = SCNVector3(x: 70, y: 0, z: 120);
 //        lightNode.position = SCNVector3(x: 140, y:27, z:-13);
-        scene.rootNode.addChildNode(lightNode);
-        
+//        scene.rootNode.addChildNode(lightNode);
+//        
 //        //create and add ambient light
 //        let ambientLightNode = SCNNode();
 //        ambientLightNode.light = SCNLight();
 //        ambientLightNode.light!.type = SCNLight.LightType.ambient;
-//        ambientLightNode.light!.color = UIColor.darkGray;
+//        ambientLightNode.light!.color = UIColor.white;
 //        scene.rootNode.addChildNode(ambientLightNode);
-        
-        //retrivieing inner geometry
-        let model = scene.rootNode.childNode(withName: "per", recursively: true)!;
-        model.position = SCNVector3(x:0, y:0, z:0);
+//        
+//        //retrivieing inner geometry
+//        let model = scene.rootNode.childNode(withName: "per", recursively: true)!;
+//        model.position = SCNVector3(x:0, y:0, z:0);
         
         //Trying to get it to rotate isn't working as expected
 //        model.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: CGFloat(Double.pi*2), z: 0, duration: 5)));
