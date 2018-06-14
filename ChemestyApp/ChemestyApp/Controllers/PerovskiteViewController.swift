@@ -11,8 +11,11 @@ import SceneKit
 
 class PerovskiteViewController: UIViewController {
     
+    @IBOutlet weak var sceneView: SCNView!
+    
     override func viewDidLoad() {
         super.viewDidLoad();
+        sceneView.backgroundColor = UIColor.black;
         
         //Creating the scene for the 3D material
 //        let scene = SCNScene(named: "Assets.xcassets/3DPerovskite.dae")!;

@@ -88,8 +88,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" sceneName="3DPerovskite.dae" translatesAutoresizingMaskIntoConstraints="NO" id="NMb-YP-RJd">
-                                <rect key="frame" x="70" y="127" width="412" height="445"/>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" sceneName="3DPerovskite.dae" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rtu-V9-ynQ">
+                                <rect key="frame" x="50" y="144" width="400" height="449"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </sceneKitView>
                         </subviews>
@@ -97,9 +97,7 @@
                         <viewLayoutGuide key="safeArea" id="Gna-pc-MZl"/>
                     </view>
                     <connections>
-                        <outlet property="scene" destination="NMb-YP-RJd" id="byX-ZY-QZz"/>
-                        <outlet property="sceneManager" destination="NMb-YP-RJd" id="xTt-my-hmG"/>
-                        <outletCollection property="test" destination="NMb-YP-RJd" id="Kqw-75-e0P"/>
+                        <outlet property="sceneView" destination="rtu-V9-ynQ" id="m4A-Ku-Cep"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Of-Yt-Yxf" userLabel="First Responder" sceneMemberID="firstResponder"/>
