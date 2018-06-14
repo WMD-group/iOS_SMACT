@@ -15,26 +15,26 @@ class PerovskiteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad();
-        sceneView.backgroundColor = UIColor.black;
+//        sceneView.backgroundColor = UIColor.black;
         
         //Creating the scene for the 3D material
-//        let scene = SCNScene(named: "Assets.xcassets/3DPerovskite.dae")!;
-//        
+        let scene = SCNScene();
+//
 //        //Creating and adding a camera to the scene
 //        let cameraNode = SCNNode();
 //        cameraNode.camera = SCNCamera();
-//        scene.rootNode.addChildNode(cameraNode);
-//        
-//        //Placing the camera
+//        sceneView.rootNode.addChildNode(cameraNode);
+//
+        //Placing the camera
 //        cameraNode.position = SCNVector3(x: 0, y: 0, z: 15);
-//        
+        
 //        //Adding a light to the scene
 //        let lightNode = SCNNode();
 //        lightNode.light = SCNLight();
 //        lightNode.light!.type = SCNLight.LightType.omni;
 //        lightNode.position = SCNVector3(x: 0, y: 10, z: 10);
-//        scene.rootNode.addChildNode(lightNode);
-//        
+//        sceneView.rootNode.addChildNode(lightNode);
+//
 //        //retrieve the inner node
 //        let element = scene.rootNode.childNode(withName: "element", recursively: true);
 //        
