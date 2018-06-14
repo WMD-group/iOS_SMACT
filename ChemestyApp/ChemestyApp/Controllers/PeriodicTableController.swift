@@ -58,9 +58,10 @@ class PeriodicTableController: UIViewController {
      */
     @IBAction func aBElementSelected(_ sender: UIButton) {
         
+        //Original dark blue of buttons: 0.00485985 0.0960863 0.574993 1
         var broken = false;
         if aBList.contains(sender){
-            sender.backgroundColor = UIColor(red: -0.141793, green: 0.8178, blue: -0.0124199, alpha: 1);
+            sender.backgroundColor = UIColor(red:  0.00485985, green: 0.0960863, blue: 0.574993, alpha: 1);
             aBList = aBList.filter({ !($0 == sender) });
             broken = true;
         }
@@ -100,8 +101,10 @@ class PeriodicTableController: UIViewController {
     
     @IBAction func xElementSelected(_ sender: UIButton) {
         
+        //Original colour of orange x element: 1 0.578105 0 1
+        
         if xElementList.contains(sender){
-            sender.backgroundColor = UIColor(red: 1, green: 0.149131, blue: 0, alpha: 1);
+            sender.backgroundColor = UIColor(red: 1, green: 0.578105, blue: 0, alpha: 1);
             xElementList = xElementList.filter({ !($0 == sender)});
             xElementSelected.text = "<3>";
         }else if xElementList.count == 0{

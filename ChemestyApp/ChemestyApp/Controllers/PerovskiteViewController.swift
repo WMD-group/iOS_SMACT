@@ -7,15 +7,38 @@
 //
 
 import UIKit
+import SceneKit
 
 class PerovskiteViewController: UIViewController {
-
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        super.viewDidLoad();
+        
+        //Creating the scene for the 3D material
+//        let scene = SCNScene(named: "Assets.xcassets/3DPerovskite.dae")!;
+//        
+//        //Creating and adding a camera to the scene
+//        let cameraNode = SCNNode();
+//        cameraNode.camera = SCNCamera();
+//        scene.rootNode.addChildNode(cameraNode);
+//        
+//        //Placing the camera
+//        cameraNode.position = SCNVector3(x: 0, y: 0, z: 15);
+//        
+//        //Adding a light to the scene
+//        let lightNode = SCNNode();
+//        lightNode.light = SCNLight();
+//        lightNode.light!.type = SCNLight.LightType.omni;
+//        lightNode.position = SCNVector3(x: 0, y: 10, z: 10);
+//        scene.rootNode.addChildNode(lightNode);
+//        
+//        //retrieve the inner node
+//        let element = scene.rootNode.childNode(withName: "element", recursively: true);
+//        
+//        
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
