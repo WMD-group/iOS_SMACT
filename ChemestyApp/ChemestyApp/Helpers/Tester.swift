@@ -25,6 +25,7 @@ public class TestInit{
         
         var resultingString : String = "";
         
+        //Used to create an instance of the Element class
         let elementH = Element("H");
 //        print(elementH.concatObjectData());
 //        print("\n");

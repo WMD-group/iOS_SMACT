@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PeM-vM-tOr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -1491,6 +1491,7 @@
                         <outlet property="aElementChosen" destination="61t-xm-tpe" id="QhD-QM-OJ3"/>
                         <outlet property="bElementChosen" destination="EmV-hk-xqU" id="JUF-bS-Jtl"/>
                         <outlet property="computedOutput" destination="f7N-hu-aVf" id="r5d-S0-Q6g"/>
+                        <outlet property="pseuLabel" destination="c6H-uk-xT9" id="3Py-Nh-vhE"/>
                         <outlet property="xElementChosen" destination="BaY-J5-KDG" id="Kb8-g0-OIB"/>
                     </connections>
                 </viewController>

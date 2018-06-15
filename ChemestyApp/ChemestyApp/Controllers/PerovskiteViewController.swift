@@ -32,7 +32,7 @@ class PerovskiteViewController: UIViewController {
 //        let lightNode = SCNNode();
 //        lightNode.light = SCNLight();
 //        lightNode.light!.type = SCNLight.LightType.directional;
-////        lightNode.position = SCNVector3(x: 70, y: 0, z: 120);
+////        lightNode.position = SCNVector3(xS: 70, y: 0, z: 120);
 //        lightNode.position = SCNVector3(x: 140, y:27, z:-13);
 //        scene.rootNode.addChildNode(lightNode);
 //        
