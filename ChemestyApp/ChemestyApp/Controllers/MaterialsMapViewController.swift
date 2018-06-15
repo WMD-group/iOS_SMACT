@@ -27,7 +27,7 @@ class MaterialsMapViewController: UIViewController {
     //Solar Panel X Button
     @IBAction func SolarPanelXButton(_ sender: Any) {
         SpeechLabel.text="This is the structure of CIGS which can be used to make solar cells. It is made out of some sustainable elements – Copper and Sulfur, as well as some that are harder to find and more expensive – Indium and Gallium.";
-        
+        ImageView.isHidden=false;
         ImageView.image = UIImage(named: "Click_X_fig_1")
     }
     
