@@ -74,6 +74,22 @@ class CrystalOptionsController: UIViewController {
             
         }
     }
+    //Created this function manually in order to transfer data between controllers
+    @IBAction func nextPage(_ sender: Any) {
+        performSegue(withIdentifier: "crystalInfoNav", sender: self);
+    }
+    
+    
+    //Function responcible for sending data to next page
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        //Creating an instance of the CrystalOptionsController
+        let crystalInfoController = segue.destination as!  CrystalInfoViewController;
+        
+        //preform check to make sure the data is not null
+        crystalInfoController.elementList = suppliedList; //enforcing the type to be list of string
+        
+    }
     
     @IBAction func BackButton(_ sender: Any) {
         dismiss(animated: true, completion: nil);

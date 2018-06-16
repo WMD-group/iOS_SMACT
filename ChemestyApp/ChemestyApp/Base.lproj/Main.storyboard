@@ -1464,7 +1464,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="4OZ-l1-vyX" kind="show" identifier="CrystalInfoNav" id="biz-9I-3xZ"/>
+                                    <action selector="nextPage:" destination="6Ja-g1-QVc" eventType="touchUpInside" id="oo5-O7-eon"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zu-Vq-iiQ" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
@@ -1512,6 +1512,7 @@
                         <outlet property="computedOutput" destination="f7N-hu-aVf" id="r5d-S0-Q6g"/>
                         <outlet property="pseuLabel" destination="c6H-uk-xT9" id="3Py-Nh-vhE"/>
                         <outlet property="xElementChosen" destination="BaY-J5-KDG" id="Kb8-g0-OIB"/>
+                        <segue destination="4OZ-l1-vyX" kind="show" identifier="crystalInfoNav" id="GDn-DS-yUA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gfv-3W-SGn" userLabel="First Responder" sceneMemberID="firstResponder"/>

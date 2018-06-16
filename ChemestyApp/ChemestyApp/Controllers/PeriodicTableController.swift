@@ -22,8 +22,6 @@ class PeriodicTableController: UIViewController {
     var numberSelected = 0;
     var aBElementLabels = [UILabel()];
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,12 +37,12 @@ class PeriodicTableController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-//    //Function mapped to "Let's Go" button
+
+    //Function mapped to "Next" button
     @IBAction func navigateCrystalOptions(_ sender: Any) {
         //preform check to make sure that the three elements have been slected
         let list = [aElementSelected.text, bElementSelected.text, xElementSelected.text];
         if list.contains("<1>") || list.contains("<2>") || list.contains("<3>"){
-            
             return;
         }
         performSegue(withIdentifier: "crystalOptionsNav", sender: self);
@@ -118,10 +116,14 @@ class PeriodicTableController: UIViewController {
     
     //Function responcible for sending data to next page
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        //Creating an instance of the CrystalOptionsController
         let crystalOptionsController = segue.destination as!  CrystalOptionsController;
+        
         //preform check to make sure the data is not null
         let list = [aElementSelected.text, bElementSelected.text, xElementSelected.text];
         crystalOptionsController.suppliedList = list as! [String]; //enforcing the type to be list of string
+        
     }
     
     
@@ -131,7 +133,6 @@ class PeriodicTableController: UIViewController {
         dismiss(animated: true, completion: nil);
         
     }
-    
     
     /*
     // MARK: - Navigation
