@@ -27,10 +27,15 @@ class PeriodicTableController: UIViewController {
         
         aBElementLabels = [aElementSelected, bElementSelected];
         // Do any additional setup after loading the view.
+        resetVariables();
     }
 
     func resetVariables (){
-        print("Reset Vars")
+        aElementSelected.text = "<1>";
+        bElementSelected.text = "<2>";
+        xElementSelected.text = "<3>";
+        aBList = [];
+        xElementList = [];
     }
     
     override func didReceiveMemoryWarning() {
