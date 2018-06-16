@@ -16,25 +16,21 @@ class CrystalInfoViewController: UIViewController {
     //Inidividual properties of each element
     var elementHHIs : [Int] = [];
     
+    //The three labels storing the information about the desired elements
+    @IBOutlet weak var colourLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var efficiencyLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         var elObjList = [Element(elementList[0]),Element(elementList[1]), Element(elementList[2])];
-        
-//        print(calcSusScore(elObjList[0], elObjList[1], elObjList[2]));
-//        print(calcBandGap(elObjList[0], elObjList[1], elObjList[2]));
-//
-//        print("HI")
-//        print((calcBandGap(elObjList[0], elObjList[1], elObjList[2])*2).rounded()/2)
-//        print( (2.6*2).rounded()/2)
-//
-//        print(3.3.rounded())
-//        print(3.5.rounded())
-        
-//        print("Most likely colour: ", colourMapping[]);
-        //Float(round(testElement.SSE!*100)/100)
-//        print(Float(round(testElement.SSE!*100)/100));
+
+        let bandGap = calcBandGap(elObjList[0],elObjList[1],elObjList[2]);
+        colourLabel.text = mostLikelyColour(bandGap);
+        scoreLabel.text = String(calcSusScore(elObjList[0],elObjList[1],elObjList[2]));
+        efficiencyLabel.text = String(maximumEfficiency(bandGap)) + "%";
         
     }
 
@@ -83,14 +79,15 @@ func maximumEfficiency(_ bandGap: Float) -> Float{
                                            3.0:4.61, 3.2:2.82, 3.4:1.71, 3.6:0.9, 3.8:0.26, 4.00:0.02, 4.2:0]
     
     //Using rounding to determine most opporximate value for efficiency
-    let roundedVal = round(bandGap*100)/100;
+    let roundedVal = round(bandGap*10)/10;
     var value = roundedVal;
     if(Int(roundedVal*10) % 2 != 0){ //even operation can only be applied to integers
         value = (round(bandGap*100)/100)-0.1; //round to 1 decimal place then subtract 0.1 to get range
     }
     
     if(value <= 4.2 && value >= 0.4){
-        value = round(value*100)/100; //added this as theres a strange rounding issue with floats, ensures 2 decimal places
+        value = round(value*10)/10; //added this as theres a strange rounding issue with floats, ensures 2 decimal places
+        print(value)
         return efficiencyMap[value]!;
     }else if(value > 4.2){
         return efficiencyMap[4.2]!;
