@@ -45,7 +45,10 @@ class CrystalOptionsController: UIViewController {
         
         //Adding this thread to preform actual computation in the background
         DispatchQueue.global(qos: .background).async {
-            self.computedResult = TestInit().Run(el1: self.selectedElList[0], el2: self.selectedElList[1], el3: self.selectedElList[2]);
+            
+            //This is where the actual computation is performed, in the 'background'
+            //performComputation function located in Chemical_Computation under Helpers folder
+            self.computedResult = performComputation(el1: self.selectedElList[0], el2: self.selectedElList[1], el3: self.selectedElList[2]);
             
             //This is done after the background code is computed
 //            DispatchQueue.main.async {
@@ -72,17 +75,7 @@ class CrystalOptionsController: UIViewController {
         }
     }
     
-    func blinkingAnimation() -> SKAction{
-        let duration = 0.4;
-        let fadeOut = SKAction.fadeAlpha(to: 0.0, duration: duration);
-        let fadeIn = SKAction.fadeAlpha(to: 1.0, duration: duration);
-        let blink = SKAction.sequence([fadeOut,fadeIn]);
-        return SKAction.repeatForever(blink);
-    }
-    
     @IBAction func BackButton(_ sender: Any) {
         dismiss(animated: true, completion: nil);
     }
-    
-
 }

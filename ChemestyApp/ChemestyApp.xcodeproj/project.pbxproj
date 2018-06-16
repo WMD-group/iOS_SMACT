@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480515CC20D520B000FB6163 /* Chemical_Computation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480515CB20D520B000FB6163 /* Chemical_Computation.swift */; };
 		4831E5B020D40A7300CBD3F3 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4831E5AF20D40A7300CBD3F3 /* loading.gif */; };
 		487EAF6D208350AF00A2D55B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487EAF6C208350AF00A2D55B /* RoundButton.swift */; };
 		487EAF74208356B400A2D55B /* PeriodicTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487EAF73208356B400A2D55B /* PeriodicTableController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		480515CB20D520B000FB6163 /* Chemical_Computation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chemical_Computation.swift; sourceTree = "<group>"; };
 		4831E5AF20D40A7300CBD3F3 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		487EAF6C208350AF00A2D55B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		487EAF73208356B400A2D55B /* PeriodicTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodicTableController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				487EAF772083583600A2D55B /* __initi__.swift */,
 				487EAF782083583600A2D55B /* data_loader.swift */,
 				487EAF762083583600A2D55B /* Tester.swift */,
+				480515CB20D520B000FB6163 /* Chemical_Computation.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				488E65C3208363ED00AF1E1F /* CrystalOptionsController.swift in Sources */,
 				E4B729032091D43500DB51FE /* CrystalInfoViewController.swift in Sources */,
 				48CB9EA72082BC1300443AAD /* AppDelegate.swift in Sources */,
+				480515CC20D520B000FB6163 /* Chemical_Computation.swift in Sources */,
 				E4B7292320CFC40700DB51FE /* MaterialsMapViewController.swift in Sources */,
 				487EAF74208356B400A2D55B /* PeriodicTableController.swift in Sources */,
 				E4B7291620921E5E00DB51FE /* PerovskiteViewController.swift in Sources */,

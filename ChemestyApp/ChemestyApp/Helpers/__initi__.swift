@@ -117,9 +117,6 @@ public class Element {
         // First filter: remove combinations which have a common denominator
         // greater than 1 (i.e. Use simplest form of each set of ratios)
         // Second filter: return only charge-neutral combinations
-//        print("Oxidations: ", oxidations);
-        
-        //not sure how to do the next bit ...
         
         //Loop through each level of the combindations list
         //Each array within stoichsList represents an Array of numbers 1->5
