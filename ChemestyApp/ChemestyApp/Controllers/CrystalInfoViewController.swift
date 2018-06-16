@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import SceneKit
 
 class CrystalInfoViewController: UIViewController {
+    
+    //3D model area
+    @IBOutlet weak var sceneView: SCNView!
     
     //Supplied list of elements filled from PeriodicTableController
     var elementList : [String] = []; //filled by previous controller
@@ -22,6 +26,7 @@ class CrystalInfoViewController: UIViewController {
     @IBOutlet weak var efficiencyLabel: UILabel!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
@@ -32,6 +37,8 @@ class CrystalInfoViewController: UIViewController {
         scoreLabel.text = String(calcSusScore(elObjList[0],elObjList[1],elObjList[2]));
         efficiencyLabel.text = String(maximumEfficiency(bandGap)) + "%";
         
+        let scene = SCNScene(named: "3DPerovskite.dae")!;
+        sceneView.scene = scene;
     }
 
     override func didReceiveMemoryWarning() {

@@ -1566,11 +1566,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xbl-Rd-GwA">
-                                <rect key="frame" x="73" y="140" width="367" height="467"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </sceneKitView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ReM-r4-pbG">
                                 <rect key="frame" x="601" y="193" width="164" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1613,6 +1608,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xbl-Rd-GwA">
+                                <rect key="frame" x="41" y="129" width="400" height="449"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </sceneKitView>
                         </subviews>
                         <color key="backgroundColor" red="0.45098039220000002" green="0.4941176471" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="npl-sS-jOU"/>
@@ -1620,6 +1620,7 @@
                     <connections>
                         <outlet property="colourLabel" destination="2wq-cf-Ber" id="k8d-DZ-ZlJ"/>
                         <outlet property="efficiencyLabel" destination="Mw9-Du-lGj" id="C4v-eN-GQW"/>
+                        <outlet property="sceneView" destination="Xbl-Rd-GwA" id="Zkd-LR-93G"/>
                         <outlet property="scoreLabel" destination="zWC-aJ-zvl" id="VT1-Kw-Va1"/>
                     </connections>
                 </viewController>
