@@ -13,8 +13,25 @@ class PerovskiteViewController: UIViewController {
     
     @IBOutlet weak var sceneView: SCNView!
     
+    
+    @IBOutlet weak var ThomasImage: UIImageView!
+    @IBOutlet weak var SpeechBubble: UIImageView!
+    @IBOutlet weak var SpeechLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad();
+        
+        //Delays:
+        //Move Thomas up after 3 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            UIView.animate(withDuration: 0.7, animations:{
+                self.ThomasImage.frame.origin.y -= 280
+                self.SpeechBubble.frame.origin.y -= 280
+                self.SpeechLabel.frame.origin.y -= 280
+            }, completion: nil)
+            
+        }
+    
 //        sceneView.backgroundColor = UIColor.black;
         
         //Creating the scene for the 3D material

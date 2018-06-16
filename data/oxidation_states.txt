@@ -13,7 +13,7 @@ Mg +2
 Al +3
 Si
 P
-S
+S -2
 Cl -1
 Ar
 K +1

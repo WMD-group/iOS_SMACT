@@ -27,6 +27,7 @@
 		E405E92120D0637D009235F4 /* digital-7 (mono italic).ttf in Resources */ = {isa = PBXBuildFile; fileRef = E405E91D20D056DB009235F4 /* digital-7 (mono italic).ttf */; };
 		E405E92220D0637D009235F4 /* digital-7 (mono).ttf in Resources */ = {isa = PBXBuildFile; fileRef = E405E91C20D056D8009235F4 /* digital-7 (mono).ttf */; };
 		E405E92320D0637D009235F4 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E405E91B20D056D6009235F4 /* digital-7.ttf */; };
+		E44E584520D456A700E2D6D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44E584420D456A700E2D6D9 /* Assets.xcassets */; };
 		E4B728F920867C8300DB51FE /* RoundLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B728F820867C8300DB51FE /* RoundLabel.swift */; };
 		E4B729032091D43500DB51FE /* CrystalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B729022091D43500DB51FE /* CrystalInfoViewController.swift */; };
 		E4B7291620921E5E00DB51FE /* PerovskiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B7291520921E5E00DB51FE /* PerovskiteViewController.swift */; };
@@ -59,6 +60,7 @@
 		E405E91C20D056D8009235F4 /* digital-7 (mono).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7 (mono).ttf"; sourceTree = "<group>"; };
 		E405E91D20D056DB009235F4 /* digital-7 (mono italic).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7 (mono italic).ttf"; sourceTree = "<group>"; };
 		E405E91F20D06131009235F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		E44E584420D456A700E2D6D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4B728F820867C8300DB51FE /* RoundLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundLabel.swift; sourceTree = "<group>"; };
 		E4B729022091D43500DB51FE /* CrystalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrystalInfoViewController.swift; sourceTree = "<group>"; };
 		E4B7291520921E5E00DB51FE /* PerovskiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerovskiteViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				48CB9EA62082BC1300443AAD /* AppDelegate.swift */,
 				E405E91420D04E4B009235F4 /* Fonts */,
 				48CB9EAA2082BC1300443AAD /* Main.storyboard */,
+				E44E584420D456A700E2D6D9 /* Assets.xcassets */,
 				48CB9EAF2082BC1400443AAD /* LaunchScreen.storyboard */,
 				48CB9EB22082BC1400443AAD /* Info.plist */,
 			);
@@ -228,6 +231,7 @@
 				E405E92120D0637D009235F4 /* digital-7 (mono italic).ttf in Resources */,
 				E405E92220D0637D009235F4 /* digital-7 (mono).ttf in Resources */,
 				E405E92320D0637D009235F4 /* digital-7.ttf in Resources */,
+				E44E584520D456A700E2D6D9 /* Assets.xcassets in Resources */,
 				E405E91620D051FD009235F4 /* Digital_tech.otf in Resources */,
 				48CB9EB12082BC1400443AAD /* LaunchScreen.storyboard in Resources */,
 				487EAF832083586C00A2D55B /* oxidation_states.txt in Resources */,
@@ -329,6 +333,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				ENABLE_ON_DEMAND_RESOURCES = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -389,7 +395,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_ON_DEMAND_RESOURCES = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;

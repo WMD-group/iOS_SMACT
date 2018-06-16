@@ -13,10 +13,32 @@ class MaterialsMapViewController: UIViewController {
     //Image Views
     @IBOutlet weak var ImageView: UIImageView!
     @IBOutlet weak var ThomasImageView: UIImageView!
-    
-  
     @IBOutlet weak var SpeechBubbleImage: UIImageView!
     @IBOutlet weak var SpeechLabel: UILabel!
+    
+    //Buttons
+    
+    //Unexplored X Button
+    @IBAction func UnexploredXButton(_ sender: Any) {
+        SpeechLabel.text="Scientists think that less than 1% of 1% of 1% of the possible materials space has actually been explored! Somewhere in the unexplored space could be the best new solar cell, battery or superconductor material of tomorrow. Maybe we’ll discover it today!";
+        ImageView.isHidden=true;
+    }
+    
+    //Solar Panel X Button
+    @IBAction func SolarPanelXButton(_ sender: Any) {
+        SpeechLabel.text="This is the structure of CIGS which can be used to make solar cells. It is made out of some sustainable elements – Copper and Sulfur, as well as some that are harder to find and more expensive – Indium and Gallium.";
+        ImageView.isHidden=false;
+        ImageView.image = UIImage(named: "Click_X_fig_1")
+    }
+    
+    // Car/Bike X Button
+    @IBAction func CarXButton(_ sender: Any) {
+        SpeechLabel.text="This is the structure of Lithium Iron Phosphate.  It can be used to make batteries which power electric bikes or cars.";
+        ImageView.isHidden=false;
+        ImageView.image = UIImage(named: "Click_X_fig_2")
+        
+    }
+    
     
     
     
@@ -25,8 +47,8 @@ class MaterialsMapViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //Delays:
-        //Move Thomas left after 2 seconds
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        //Move Thomas left after 0.5 of a second
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             UIView.animate(withDuration: 1, animations:{
                 self.ThomasImageView.frame.origin.x -= 453
             }, completion: nil)
@@ -34,33 +56,14 @@ class MaterialsMapViewController: UIViewController {
             
         }
         
-        //Show speech bubble after 2 second delay
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        //Show speech bubble after 1.5 second delay
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             UIView.animate(withDuration: 1, animations:{
                 self.SpeechBubbleImage.isHidden = false;
                 self.SpeechLabel.isHidden = false;
             }, completion: nil)
-
-    }
-        
-    
-        
-        
-    }
-    
-   
-    
-    //X Buttons
-    //GREEN X -> display figure 1
-    @IBAction func displayImage1(_ sender: Any) {
-        ImageView.image = UIImage(named: "Click_X_fig_1.png")
-    }
-    
-    //PINK X -> display figure 2
-    @IBAction func displayImage2(_ sender: Any) {
-        ImageView.image = UIImage(named: "Click_X_fig_2.png")
-        
-    }
+            
+        }}
     
 
     override func didReceiveMemoryWarning() {
@@ -69,23 +72,10 @@ class MaterialsMapViewController: UIViewController {
     }
     
     
-
-    
     //Back Button to IntroPage (Page 1)
     @IBAction func BackButton(_ sender: Any) {
         dismiss(animated: true, completion: nil);
     }
     
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
