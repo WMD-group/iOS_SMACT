@@ -172,3 +172,33 @@ func calcSusScore(_ el1: Element, _ el2:Element, _ el3: Element) -> Int {
     let c = el3.HHI_r!
     return (Int(a+b+c));
 }
+
+//susLabel function used to assign the appropriate label to a sus score
+func susLabel(_ score: Int) -> String{
+    
+    /*
+    HHI score  Description
+    < 1999        Excellent! You've chosen some very widely available elements.
+    2000 - 2999   Very good! You've chosen some very abundant elements.
+    3000 - 4999   Good! Most of the elements you've chosen are very abundant.
+    5000 - 7999   Average. Some of the elements in this compound are more abundant than others.
+    8000 - 10000   Not great. Some of the elements in this compound are quite rare.
+    > 10000      Bad! Some of the elements in this compound are very rare!
+    */
+    var msg = "";
+    if(score < 2000){
+        msg = "Excellent! You've chosen some very widely available elements."
+    }else if(score >= 2000 && score < 3000){
+        msg = "Very good! You've chosen some very abundant elements."
+    }else if(score >= 3000 && score < 5000){
+        msg = "Good! Most of the elements you've chosen are very abundant."
+    }else if(score >= 5000 && score < 8000){
+        msg = "Average. Some of the elements in this compound are more abundant than others."
+    }else if(score >= 8000 && score <= 10000){
+        msg = "Not great. Some of the elements in this compound are quite rare."
+    }else{
+        msg = "Bad! Some of the elements in this compound are very rare!"
+    }
+    
+    return msg;
+}
