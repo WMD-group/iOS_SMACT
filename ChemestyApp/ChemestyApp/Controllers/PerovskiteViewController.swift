@@ -22,12 +22,12 @@ class PerovskiteViewController: UIViewController {
         super.viewDidLoad();
         
         //Delays:
-        //Move Thomas up after 3 seconds
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            UIView.animate(withDuration: 0.7, animations:{
-                self.ThomasImage.frame.origin.y -= 280
-                self.SpeechBubble.frame.origin.y -= 280
-                self.SpeechLabel.frame.origin.y -= 280
+        //Move Thomas up after 5 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            UIView.animate(withDuration: 1, animations:{
+                self.ThomasImage.isHidden = false;
+                self.SpeechBubble.isHidden = false;
+                self.SpeechLabel.isHidden = false;
             }, completion: nil)
             
         }

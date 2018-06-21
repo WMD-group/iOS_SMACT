@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class MaterialsMapViewController: UIViewController {
 
@@ -14,28 +16,68 @@ class MaterialsMapViewController: UIViewController {
     @IBOutlet weak var ImageView: UIImageView!
     @IBOutlet weak var ThomasImageView: UIImageView!
     @IBOutlet weak var SpeechBubbleImage: UIImageView!
+    @IBOutlet weak var MaterialMap: UIImageView!
+    @IBOutlet weak var MaterialMap1: UIImageView!
     @IBOutlet weak var SpeechLabel: UILabel!
+    @IBOutlet weak var SpeechLabel1: UILabel!
+    @IBOutlet weak var PlayVidButton: UIButton!
+    @IBOutlet weak var X1: UIButton!
+    @IBOutlet weak var X2: UIButton!
+    @IBOutlet weak var X3: UIButton!
     
     //Buttons
     
     //Unexplored X Button
     @IBAction func UnexploredXButton(_ sender: Any) {
-        SpeechLabel.text="Scientists think that less than 1% of 1% of 1% of the possible materials space has actually been explored! Somewhere in the unexplored space could be the best new solar cell, battery or superconductor material of tomorrow. Maybe we’ll discover it today!";
-        ImageView.isHidden=true;
+        SpeechLabel.text="We need flexible electronics to make phones that can bend.";
+        SpeechLabel1.text="Click on another X or press 'Next' to continue.";
+        ImageView.isHidden=false;
+        ImageView.image = UIImage(named: "Click_X_fig_3")
     }
     
     //Solar Panel X Button
     @IBAction func SolarPanelXButton(_ sender: Any) {
-        SpeechLabel.text="This is the structure of CIGS which can be used to make solar cells. It is made out of some sustainable elements – Copper and Sulfur, as well as some that are harder to find and more expensive – Indium and Gallium.";
+        SpeechLabel.text="We need stronger and lighter materials to make safer aeroplane wings.";
+        SpeechLabel1.text="Click on another X or press 'Next' to continue.";
         ImageView.isHidden=false;
         ImageView.image = UIImage(named: "Click_X_fig_1")
     }
     
     // Car/Bike X Button
     @IBAction func CarXButton(_ sender: Any) {
-        SpeechLabel.text="This is the structure of Lithium Iron Phosphate.  It can be used to make batteries which power electric bikes or cars.";
+        SpeechLabel.text="We need materials which can bend light to make invisibility cloaks.";
+        SpeechLabel1.text="Click on another X or press 'Next' to continue.";
         ImageView.isHidden=false;
         ImageView.image = UIImage(named: "Click_X_fig_2")
+        
+    }
+    
+    @IBAction func PlayVideoButton(_ sender: Any) {
+        
+       let video = AVPlayer(url: URL(fileURLWithPath: "/Users/jacobwilson/iOS_SMACT/ChemestyApp/ChemestyApp/Data_Store/MaterialMapAnime_V2.mov"))
+       let videoPlayer = AVPlayerViewController()
+       videoPlayer.player = video
+        
+        present(videoPlayer, animated: true, completion:
+            {
+                video.play()
+        })
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            UIView.animate(withDuration: 1, animations:{
+                self.MaterialMap.isHidden = true;
+                self.MaterialMap1.isHidden = false;
+                self.X1.isHidden = false;
+                self.X2.isHidden = false;
+                self.X3.isHidden = false;
+                self.SpeechLabel.text="Scientists are searching this 'material space' for materials which can develop new and existing technologies.";
+                self.SpeechLabel1.text="Click on an X to find out about some exciting future tech!";
+                self.PlayVidButton.isHidden = true;
+            }, completion: nil)
+            
+            
+        }
+        
         
     }
     
@@ -47,20 +89,23 @@ class MaterialsMapViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //Delays:
-        //Move Thomas left after 0.5 of a second
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        //Move Thomas left after 1.0 of a second
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             UIView.animate(withDuration: 1, animations:{
-                self.ThomasImageView.frame.origin.x -= 453
+                self.ThomasImageView.isHidden = false;
             }, completion: nil)
             
             
         }
+        
         
         //Show speech bubble after 1.5 second delay
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             UIView.animate(withDuration: 1, animations:{
                 self.SpeechBubbleImage.isHidden = false;
                 self.SpeechLabel.isHidden = false;
+                self.SpeechLabel1.isHidden = false;
+                self.PlayVidButton.isHidden = false;
             }, completion: nil)
             
         }}
