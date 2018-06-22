@@ -48,7 +48,9 @@ class CrystalOptionsController: UIViewController {
             
             //This is where the actual computation is performed, in the 'background'
             //performComputation function located in Chemical_Computation under Helpers folder
-            self.computedResult = performComputation(el1: self.selectedElList[0], el2: self.selectedElList[1], el3: self.selectedElList[2]);
+            //self.computedResult
+            let (msg, chargeNeutrals)  = performComputation(el1: self.selectedElList[0], el2: self.selectedElList[1], el3: self.selectedElList[2]);
+            self.computedResult = msg;
             
             //This is done after the background code is computed
 //            DispatchQueue.main.async {
@@ -62,6 +64,7 @@ class CrystalOptionsController: UIViewController {
             self.pseuLabel.text = "Done!";
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 self.pseuLabel.text = "Calculating charge neutral ratios ... ";
+                
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                     self.pseuLabel.text = "Done! All computations are complete!";
                     

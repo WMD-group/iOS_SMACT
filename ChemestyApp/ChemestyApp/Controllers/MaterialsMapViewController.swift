@@ -54,9 +54,12 @@ class MaterialsMapViewController: UIViewController {
     
     @IBAction func PlayVideoButton(_ sender: Any) {
         
-       let video = AVPlayer(url: URL(fileURLWithPath: "/Users/jacobwilson/iOS_SMACT/ChemestyApp/ChemestyApp/Data_Store/MaterialMapAnime_V2.mov"))
-       let videoPlayer = AVPlayerViewController()
-       videoPlayer.player = video
+        var path : String;
+        path = (Bundle.main.url(forResource: "MaterialMapAnime_V2", withExtension: ".mov")?.path)!;
+        
+        let video = AVPlayer(url: URL(fileURLWithPath: path));
+        let videoPlayer = AVPlayerViewController()
+        videoPlayer.player = video
         
         present(videoPlayer, animated: true, completion:
             {

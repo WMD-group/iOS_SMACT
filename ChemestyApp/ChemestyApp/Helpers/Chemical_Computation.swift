@@ -65,7 +65,7 @@ public func determinePerRatio(_ cn_list : [[(String, Int)]]) -> String{
 }
 
 //Combines determineChargeNeutral & determinePerRatio to produce the desired list output
-public func performComputation(el1: String, el2: String, el3: String) -> String{
+public func performComputation(el1: String, el2: String, el3: String) -> (String, Int){
     
     var resultingString : String = "";
     
@@ -79,7 +79,7 @@ public func performComputation(el1: String, el2: String, el3: String) -> String{
     
     resultingString += "************\n";
     
-    return resultingString;
+    return (resultingString, cn_list.count);
 }
 
 /*
