@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		480515CC20D520B000FB6163 /* Chemical_Computation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480515CB20D520B000FB6163 /* Chemical_Computation.swift */; };
+		4831CB6420DCF6930043E451 /* customText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4831CB6320DCF6930043E451 /* customText.swift */; };
 		487EAF6D208350AF00A2D55B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487EAF6C208350AF00A2D55B /* RoundButton.swift */; };
 		487EAF74208356B400A2D55B /* PeriodicTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487EAF73208356B400A2D55B /* PeriodicTableController.swift */; };
 		487EAF792083583600A2D55B /* Tester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487EAF762083583600A2D55B /* Tester.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		480515CB20D520B000FB6163 /* Chemical_Computation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chemical_Computation.swift; sourceTree = "<group>"; };
+		4831CB6320DCF6930043E451 /* customText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customText.swift; sourceTree = "<group>"; };
 		487EAF6C208350AF00A2D55B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		487EAF73208356B400A2D55B /* PeriodicTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodicTableController.swift; sourceTree = "<group>"; };
 		487EAF762083583600A2D55B /* Tester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tester.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		487EAF75208357E900A2D55B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4831CB6320DCF6930043E451 /* customText.swift */,
 				487EAF772083583600A2D55B /* __initi__.swift */,
 				487EAF782083583600A2D55B /* data_loader.swift */,
 				487EAF762083583600A2D55B /* Tester.swift */,
@@ -265,6 +268,7 @@
 				480515CC20D520B000FB6163 /* Chemical_Computation.swift in Sources */,
 				E4B7292320CFC40700DB51FE /* MaterialsMapViewController.swift in Sources */,
 				487EAF74208356B400A2D55B /* PeriodicTableController.swift in Sources */,
+				4831CB6420DCF6930043E451 /* customText.swift in Sources */,
 				E4B7291620921E5E00DB51FE /* PerovskiteViewController.swift in Sources */,
 				487EAF7A2083583600A2D55B /* __initi__.swift in Sources */,
 			);
