@@ -95,7 +95,27 @@ public class Data_loader{
         return some
         
     }
-
+    //Returns the full name of an element, returns dictionary
+    func lookup_element_name(symbol: String) -> [String : String]{
+        
+        let fileData = _get_data_rows(filename: "elementNameSymbols", filetype: "csv");
+        
+        var finalDictionary : [String : String] = [:];
+        
+        //Split internal string of each list elemnt on ","
+        let furtherReducedFile = fileData.map{
+            ($0[0]).components(separatedBy: ",")
+        };
+        
+        
+        for item in furtherReducedFile{
+            finalDictionary[item[0]] = item[1];
+        }
+        
+        return finalDictionary;
+    }
+    
+    
     //Returns value assoicated with key of Dictionary
     func lookup_element_data( symbol : String, copy:Bool = true) -> Zip2Sequence<Array<String>, Array<Any>>{
         /*

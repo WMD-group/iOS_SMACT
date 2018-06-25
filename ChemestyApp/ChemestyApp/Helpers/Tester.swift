@@ -58,7 +58,8 @@ public class TestInit{
                         let ox_states = [ox1, ox2, ox3];
                         
                         // Add charge neutral combos to list
-                        let (cn_e, cn_r) = elementH.neutral_ratios(oxidations: ox_states, threshold: max_amount);
+                        //replace _ with cn_e if cn_e required
+                        let (_, cn_r) = elementH.neutral_ratios(oxidations: ox_states, threshold: max_amount);
                         
                         for combination in cn_r{
                             let temp = zip(symbols, combination);

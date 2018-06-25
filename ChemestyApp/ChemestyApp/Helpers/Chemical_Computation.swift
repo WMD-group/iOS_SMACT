@@ -43,7 +43,12 @@ public func determineChargeNeutral(_ el1: String, _ el2: String, _ el3: String) 
     }
     return cn_list;
 }
+
 //determinePerRatio determines if charge netural list for given elements contains a perovskite
+
+//determinePerRatio determines if charge netural list for given elements contains a perovskite and returns number of perovskites
+//only returns the chemical formula for the perovskites
+
 public func determinePerRatio(_ cn_list : [[(String, Int)]]) -> (String, Int){
     
     var resString : String = "";
@@ -59,9 +64,13 @@ public func determinePerRatio(_ cn_list : [[(String, Int)]]) -> (String, Int){
         if (item[0].1 == 1) && (item[1].1 == 1) && (item[2].1 == 3){
             resString += (formula + "\n"); //+ " <-- Woohoo! We found a 1:1:3 ratio (perovskite)!
             numberPer += 1
-        }else{
-            //            resString += (formula + "\n");
         }
+
+            //            resString += (formula + "\n");
+
+//            resString += (formula + "\n");
+
+        
     }
     return (resString, numberPer);
 }
@@ -76,6 +85,7 @@ public func performComputation(el1: String, el2: String, el3: String) -> (String
     let cn_list = determineChargeNeutral(el1, el2, el3);
     
     // And how many are charge neutral (to be used on the next page)
+
     //    resultingString += ("For elements \([el1, el2, el3]):\n");
     resultingString1 += ("Thomas: I found \(cn_list.count) candidate materials.");
     

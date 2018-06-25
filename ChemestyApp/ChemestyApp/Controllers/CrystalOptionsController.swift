@@ -63,10 +63,12 @@ class CrystalOptionsController: UIViewController {
             //This is where the actual computation is performed, in the 'background'
             //performComputation function located in Chemical_Computation under Helpers folder
             //self.computedResult
+
             let (msg1, msg2, chargeNeutrals, numOfPerov)  = performComputation(el1: self.selectedElList[0], el2: self.selectedElList[1], el3: self.selectedElList[2]);
             self.computedResult1 = msg1;
             self.computedResult2 = msg2;
             self.numberOfPerov = numOfPerov;
+
             //This is done after the background code is computed
 //            DispatchQueue.main.async {
 //                self.computedOutput.text = self.computedResult;
@@ -92,7 +94,7 @@ class CrystalOptionsController: UIViewController {
                     self.PseudoCode3.text = "Thomas: Done!";
                     
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                        self.PseudoCode4.text = "Thomas: Initializing Material Discovery software";
+                        self.PseudoCode4.text = "Thomas: Initializing Material Discovery software.";
                         
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
                             self.PseudoCode5.text = "Thomas: Done!";
@@ -129,63 +131,70 @@ class CrystalOptionsController: UIViewController {
                                                 self.PseudoCode1.text = "Thomas: Calculating all elemental combinations.";
                                                 self.PseudoCode2.text = "Thomas: Done!";
                                                 self.PseudoCode3.text = "Thomas: Calculating charge neutral combinations.";
-                                                self.PseudoCode4.text = "Thomas: Done!"
+                                                self.PseudoCode4.text = "Thomas: Done!";
                                                 self.PseudoCode5.text = "Thomas: All calculations are complete.";
                                                 
                                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                                                     self.PseudoCode1.text = "Thomas: Done!";
                                                     self.PseudoCode2.text = "Thomas: Calculating charge neutral combinations.";
-                                                    self.PseudoCode3.text = "Thomas: Done!"
+                                                    self.PseudoCode3.text = "Thomas: Done!";
                                                     self.PseudoCode4.text = "Thomas: All calculations complete.";
                                                     self.PseudoCode5.text = "Thomas: ...";
                                                     
                                                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
                                                         self.PseudoCode1.text = "Thomas: Calculating charge neutral combinations.";
-                                                        self.PseudoCode2.text = "Thomas: Done!"
+                                                        self.PseudoCode2.text = "Thomas: Done!";
                                                         self.PseudoCode3.text = "Thomas: All calculations complete.";
                                                         self.PseudoCode4.text = "Thomas: ...";
                                                         self.PseudoCode5.text = self.computedResult1;
                                                     
                                                         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                                                            self.PseudoCode1.text = "Thomas: Calculating all charge neutral combinations.";
-                                                            self.PseudoCode2.text = "Thomas: Done!"
-                                                            self.PseudoCode3.text = "Thomas: All calculations complete.";
+                                                            self.PseudoCode1.text = "Thomas: Done!";
+                                                            self.PseudoCode2.text = "Thomas: All calculations complete.";
+                                                            self.PseudoCode3.text = "Thomas: ...";
                                                             self.PseudoCode4.text = self.computedResult1;
                                                             self.PseudoCode5.text = self.computedResult2;
-                                                    
+                                                            
+                                                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                                                                self.PseudoCode1.text = "Thomas: All calculations complete.";
+                                                                self.PseudoCode2.text = "Thomas: ...";
+                                                                self.PseudoCode3.text = self.computedResult1;
+                                                                self.PseudoCode4.text = self.computedResult2;
+                                                                self.PseudoCode5.text = "Thomas: ...";
+                                                                
                                                         if self.numberOfPerov == 0 {
                                                     
                                                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                                                                self.PseudoCode2.text = "Thomas: Done!"
-                                                                self.PseudoCode3.text = "Thomas: All calculations complete.";
-                                                                self.PseudoCode4.text = self.computedResult1;
-                                                                self.PseudoCode5.text = self.computedResult2;
-                                                                self.PseudoCode1.text = "Thomas: Oh no! We didn't discover a new Perovskite this time.";
+                                                                self.PseudoCode1.text = "Thomas: ...";
+                                                                self.PseudoCode2.text = self.computedResult1;
+                                                                self.PseudoCode3.text = self.computedResult2;
+                                                                self.PseudoCode4.text = "Thomas: ...";
+                                                                self.PseudoCode5.text = "Thomas: Oh no! We didn't discover a new Perovskite this time.";
                                                     
                                                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                                                                    self.PseudoCode1.text = "Thomas: All calculations complete.";
-                                                                    self.PseudoCode2.text = self.computedResult1;
-                                                                    self.PseudoCode3.text = self.computedResult2;
+                                                                    self.PseudoCode1.text = self.computedResult1;
+                                                                    self.PseudoCode2.text = self.computedResult2;
+                                                                    self.PseudoCode3.text = "Thomas: ...";
                                                                     self.PseudoCode4.text = "Thomas: Oh no! We didn't discover a new Perovskite this time.";
-                                                                    self.PseudoCode5.text = "Thomas: Press 'Back' to try again."
+                                                                    self.PseudoCode5.text = "Thomas: Press 'Back' to try again.";
                                                                 }
                                                             }
                                                         }
                                                             else {
 
                                                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                                                                self.PseudoCode1.text = "Thomas: Done!"
-                                                                self.PseudoCode2.text = "Thomas: All calculations complete.";
-                                                                self.PseudoCode3.text = self.computedResult1;
-                                                                self.PseudoCode4.text = self.computedResult2;
+                                                                self.PseudoCode1.text = "Thomas: ...";
+                                                                self.PseudoCode2.text = self.computedResult1;
+                                                                self.PseudoCode3.text = self.computedResult2;
+                                                                self.PseudoCode4.text = "Thomas: ...";
                                                                 self.PseudoCode5.text = "Thomas: Wooohoo! We discovered a new perovskite!";
                                                                 
                                                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                                                                    self.PseudoCode1.text = "Thomas: All calculations complete.";
-                                                                    self.PseudoCode2.text = self.computedResult1;
-                                                                    self.PseudoCode3.text = self.computedResult2;
+                                                                    self.PseudoCode1.text = self.computedResult1;
+                                                                    self.PseudoCode2.text = self.computedResult2;
+                                                                    self.PseudoCode3.text = "Thomas: ...";
                                                                     self.PseudoCode4.text = "Thomas: Wooohoo! We discovered a new perovskite!";
-                                                                    self.PseudoCode5.text = "Thomas: Press 'Next' to take a closer look."
+                                                                    self.PseudoCode5.text = "Thomas: Press 'Next' to take a closer look.";
                                                                 }
                                                             }
                                                         }
@@ -197,6 +206,7 @@ class CrystalOptionsController: UIViewController {
                     }
                 }
             }
+                                                }
                                             }
                                         }
                                     }
