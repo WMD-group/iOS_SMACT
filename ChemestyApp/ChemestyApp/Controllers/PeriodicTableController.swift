@@ -18,6 +18,13 @@ class PeriodicTableController: UIViewController {
     @IBOutlet weak var bElementSelected: UILabel!
     @IBOutlet weak var xElementSelected: UILabel!
     @IBOutlet weak var sendToThomas: RoundButton!
+    var abElementLabels : [UILabel] = [];
+    
+    //Full name of element labels
+    @IBOutlet weak var elementName1: UILabel!
+    @IBOutlet weak var elementName2: UILabel!
+    @IBOutlet weak var elementName3: UILabel!
+    var abElementNames : [UILabel] = [];
     
     //Integer used to record how many buttons are pressed
     var numberSelected = 0;
@@ -31,6 +38,8 @@ class PeriodicTableController: UIViewController {
         // Do any additional setup after loading the view.
         elementNames = Data_loader().lookup_element_name(symbol: "He"); //element name is redundant
         resetVariables();
+        abElementNames = [elementName1, elementName2];
+        abElementLabels = [aElementSelected, bElementSelected];
     }
 
     func resetVariables (){
@@ -40,6 +49,9 @@ class PeriodicTableController: UIViewController {
         aBList = [];
         xElementList = [];
         sendToThomas.isEnabled = false;
+        elementName1.text = "";
+        elementName2.text = "";
+        elementName3.text = "";
     }
     
     override func didReceiveMemoryWarning() {
@@ -66,55 +78,104 @@ class PeriodicTableController: UIViewController {
     @IBAction func aBElementSelected(_ sender: UIButton) {
         
         //Original dark blue of buttons: 0.00485985 0.0960863 0.574993 1
-        var broken = false;
+        var alreadySelected = false;
+        
+        //Check to see if button pressed twice
         if aBList.contains(sender){
-            sender.backgroundColor = UIColor(red:  0.00485985, green: 0.0960863, blue: 0.574993, alpha: 1);
-            aBList = aBList.filter({ !($0 == sender) });
-            broken = true;
-        }
-        if aBList.count == 0{
-            aElementSelected.text = "<1>";
-            bElementSelected.text = "<2>";
-            sendToThomas.isEnabled = false;
-        }else if aBList.count == 1{
-            aElementSelected.text = aBList[0].titleLabel!.text;
-            bElementSelected.text = "<2>";
-            sendToThomas.isEnabled = false;
-        }else{
-            aElementSelected.text = aBList[0].titleLabel!.text;
-            bElementSelected.text = aBList[1].titleLabel!.text;
             
-            //If all the elements are selcted, then enable the 'send to thomas' button
-            if(xElementList.count == 1){
-                sendToThomas.isEnabled = true;
+            sender.backgroundColor = UIColor(red:  0.00485985, green: 0.0960863, blue: 0.574993, alpha: 1);
+            
+            //If the first element in the list is selected to be removed
+            if abElementLabels[0].text == sender.titleLabel!.text{
+                
+                //Special case when de-selecting a single chosen element
+                if aBList.count == 1{
+                    abElementNames[0].text = "";
+                    abElementLabels[0].text = "<1>";
+                    sendToThomas.isEnabled = false;
+                }else{
+                    abElementNames[0].text = abElementNames[1].text;
+                    abElementLabels[0].text = abElementLabels[1].text;
+                    abElementNames[1].text = "";
+                    abElementLabels[1].text = "<2>";
+                    sendToThomas.isEnabled = false;
+                }
+                
+            }else if aBElementLabels[1].text == sender.titleLabel!.text{
+                abElementNames[1].text = "";
+                abElementLabels[1].text = "<2>";
+                sendToThomas.isEnabled = false;
             }
+//            abElementNames[aBList.count-1].text = "";
+//            abElementLabels[aBList.count-1].text = "<??>";
+
+            alreadySelected = true;
+            aBList = aBList.filter({ !($0 == sender) });
+            
         }
         
-        if broken{ return; }
+//        if aBList.count == 0{
+//            aElementSelected.text = "<1>";
+//            bElementSelected.text = "<2>";
+//            sendToThomas.isEnabled = false;
+//
+//            abElementNames[0].text = "";
+//            abElementNames[1].text = "";
+//        }else if aBList.count == 1{
+//            aElementSelected.text = aBList[0].titleLabel!.text;
+//            elementName1.text = elementNames[aBList[0].titleLabel!.text!];
+//            bElementSelected.text = "<2>";
+//            sendToThomas.isEnabled = false;
+//        }else{
+//            aElementSelected.text = aBList[0].titleLabel!.text;
+//            bElementSelected.text = aBList[1].titleLabel!.text;
+//
+//            elementName2.text = elementNames[aBList[1].titleLabel!.text!];
+//            //If all the elements are selcted, then enable the 'send to thomas' button
+//            if(xElementList.count == 1){
+//                sendToThomas.isEnabled = true;
+//            }
+//        }
+        
+        if alreadySelected{ return; }
 
         if aBList.count < 2{
             aBList.append(sender);
             sender.backgroundColor = UIColor(red: 0, green: 0, blue: 1, alpha: 1);
-//            aBElementLabels[aBList.count-1].text = sender.titleLabel!.text;
+            abElementNames[aBList.count-1].text = elementNames[sender.titleLabel!.text!];
+            abElementLabels[aBList.count-1].text = aBList[aBList.count-1].titleLabel!.text!;
         }else{
             print("Cannot select more than 2 elements from A and B category")
         }
         
-        if aBList.count == 0{
-            aElementSelected.text = "<1>";
-            bElementSelected.text = "<2>";
-        }else if aBList.count == 1{
-            aElementSelected.text = aBList[0].titleLabel!.text;
-            bElementSelected.text = "<2>";
-        }else{
-            aElementSelected.text = aBList[0].titleLabel!.text;
-            bElementSelected.text = aBList[1].titleLabel!.text;
-
-            //If all the elements are selcted, then enable the 'send to thomas' button
-            if(xElementList.count == 1){
-                sendToThomas.isEnabled = true;
-            }
+        //If all elements are selected, activate button
+        if(aBList.count == 2 && xElementSelected.text != "<3>"){
+            sendToThomas.isEnabled = true;
         }
+        
+//        if aBList.count == 0{
+//            aElementSelected.text = "<1>";
+//            bElementSelected.text = "<2>";
+//
+//            abElementNames[0].text = "";
+//            abElementNames[1].text = "";
+//        }else if aBList.count == 1{
+//            aElementSelected.text = aBList[0].titleLabel!.text;
+//            abElementNames[0].text = abElementNames[1].text;
+//            bElementSelected.text = "<2>";
+//            abElementNames[1].text = "";
+//        }else{
+//            aElementSelected.text = aBList[0].titleLabel!.text;
+//            bElementSelected.text = aBList[1].titleLabel!.text;
+//
+////            abElementNames[0].text = elementNames[aBList[0].titleLabel!.text!];
+////            abElementNames[1].text = elementNames[aBList[1].titleLabel!.text!];
+//
+//            //If all the elements are selcted, then enable the 'send to thomas' button
+//            if(xElementList.count == 1){
+//                sendToThomas.isEnabled = true;
+//            }
+//        }
        
     }
     
@@ -127,11 +188,14 @@ class PeriodicTableController: UIViewController {
             xElementList = xElementList.filter({ !($0 == sender)});
             xElementSelected.text = "<3>";
             sendToThomas.isEnabled = false;
+            elementName3.text = "";
         }else if xElementList.count == 0{
             xElementList.append(sender);
             sender.backgroundColor = UIColor(red: 0, green: 0, blue: 1, alpha: 1);
-            xElementSelected.text = sender.titleLabel?.text;
             
+            let element = sender.titleLabel?.text;
+            xElementSelected.text = element;
+            elementName3.text = elementNames[element!];
             //if all a, b and x elements selected, then enable next button
             if(aBList.count == 2){
                 sendToThomas.isEnabled = true;

@@ -1401,6 +1401,27 @@
                                     <action selector="navigateCrystalOptions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ifA-kr-YYA"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWu-El-Ued">
+                                <rect key="frame" x="297" y="582" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiU-Me-DxN">
+                                <rect key="frame" x="450" y="582" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxb-Ys-BwF">
+                                <rect key="frame" x="598" y="582" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.45098039220000002" green="0.4941176471" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -1408,6 +1429,9 @@
                     <connections>
                         <outlet property="aElementSelected" destination="wYV-Sh-xbE" id="5hr-JW-RrL"/>
                         <outlet property="bElementSelected" destination="1bw-uQ-GK2" id="kao-ZW-hhQ"/>
+                        <outlet property="elementName1" destination="NWu-El-Ued" id="Egm-tV-H16"/>
+                        <outlet property="elementName2" destination="HiU-Me-DxN" id="0Dd-kg-Vr1"/>
+                        <outlet property="elementName3" destination="Uxb-Ys-BwF" id="Btf-5I-dsG"/>
                         <outlet property="sendToThomas" destination="JSA-vt-fue" id="EhF-E2-kJh"/>
                         <outlet property="xElementSelected" destination="ga5-Zp-oK2" id="cIX-eV-faZ"/>
                         <segue destination="6Ja-g1-QVc" kind="show" identifier="crystalOptionsNav" id="SHP-FX-vPX"/>
