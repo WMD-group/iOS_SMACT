@@ -17,6 +17,7 @@ class PeriodicTableController: UIViewController {
     @IBOutlet weak var aElementSelected: UILabel!
     @IBOutlet weak var bElementSelected: UILabel!
     @IBOutlet weak var xElementSelected: UILabel!
+    @IBOutlet weak var sendToThomas: RoundButton!
     
     //Integer used to record how many buttons are pressed
     var numberSelected = 0;
@@ -36,6 +37,7 @@ class PeriodicTableController: UIViewController {
         xElementSelected.text = "<3>";
         aBList = [];
         xElementList = [];
+        sendToThomas.isEnabled = false;
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,7 +45,7 @@ class PeriodicTableController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    //Function mapped to "Next" button
+    //Function mapped to "Send to thomas" button
     @IBAction func navigateCrystalOptions(_ sender: Any) {
         //preform check to make sure that the three elements have been slected
         let list = [aElementSelected.text, bElementSelected.text, xElementSelected.text];
@@ -71,12 +73,19 @@ class PeriodicTableController: UIViewController {
         if aBList.count == 0{
             aElementSelected.text = "<1>";
             bElementSelected.text = "<2>";
+            sendToThomas.isEnabled = false;
         }else if aBList.count == 1{
             aElementSelected.text = aBList[0].titleLabel!.text;
             bElementSelected.text = "<2>";
+            sendToThomas.isEnabled = false;
         }else{
             aElementSelected.text = aBList[0].titleLabel!.text;
             bElementSelected.text = aBList[1].titleLabel!.text;
+            
+            //If all the elements are selcted, then enable the 'send to thomas' button
+            if(xElementList.count == 1){
+                sendToThomas.isEnabled = true;
+            }
         }
         
         if broken{ return; }
@@ -98,6 +107,11 @@ class PeriodicTableController: UIViewController {
         }else{
             aElementSelected.text = aBList[0].titleLabel!.text;
             bElementSelected.text = aBList[1].titleLabel!.text;
+
+            //If all the elements are selcted, then enable the 'send to thomas' button
+            if(xElementList.count == 1){
+                sendToThomas.isEnabled = true;
+            }
         }
        
     }
@@ -110,10 +124,17 @@ class PeriodicTableController: UIViewController {
             sender.backgroundColor = UIColor(red: 1, green: 0.578105, blue: 0, alpha: 1);
             xElementList = xElementList.filter({ !($0 == sender)});
             xElementSelected.text = "<3>";
+            sendToThomas.isEnabled = false;
         }else if xElementList.count == 0{
             xElementList.append(sender);
             sender.backgroundColor = UIColor(red: 0, green: 0, blue: 1, alpha: 1);
             xElementSelected.text = sender.titleLabel?.text;
+            
+            //if all a, b and x elements selected, then enable next button
+            if(aBList.count == 2){
+                sendToThomas.isEnabled = true;
+            }
+            
         }else{
             print("Cannot select more than one x element")
         }
