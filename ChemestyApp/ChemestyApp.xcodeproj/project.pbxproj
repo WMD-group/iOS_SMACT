@@ -23,6 +23,7 @@
 		48CB9EA72082BC1300443AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB9EA62082BC1300443AAD /* AppDelegate.swift */; };
 		48CB9EAC2082BC1300443AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CB9EAA2082BC1300443AAD /* Main.storyboard */; };
 		48CB9EB12082BC1400443AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CB9EAF2082BC1400443AAD /* LaunchScreen.storyboard */; };
+		48FF0C1D20E10CF900277ED7 /* elementNameSymbols.csv in Resources */ = {isa = PBXBuildFile; fileRef = 48FF0C1C20E10CF900277ED7 /* elementNameSymbols.csv */; };
 		87E4135920DC202A004F7C48 /* MaterialMapAnime_V2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 87E4135820DC202A004F7C48 /* MaterialMapAnime_V2.mov */; };
 		E405E91620D051FD009235F4 /* Digital_tech.otf in Resources */ = {isa = PBXBuildFile; fileRef = E405E91820D051FD009235F4 /* Digital_tech.otf */; };
 		E405E92020D0637D009235F4 /* digital-7 (italic).ttf in Resources */ = {isa = PBXBuildFile; fileRef = E405E91A20D056D5009235F4 /* digital-7 (italic).ttf */; };
@@ -56,6 +57,7 @@
 		48CB9EAB2082BC1300443AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48CB9EB02082BC1400443AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48CB9EB22082BC1400443AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48FF0C1C20E10CF900277ED7 /* elementNameSymbols.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = elementNameSymbols.csv; sourceTree = "<group>"; };
 		87E4135820DC202A004F7C48 /* MaterialMapAnime_V2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = MaterialMapAnime_V2.mov; sourceTree = "<group>"; };
 		E405E91720D051FD009235F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Digital_tech.otf; sourceTree = "<group>"; };
 		E405E91920D051FF009235F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/Digital_tech.otf; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		487EAF7C2083584300A2D55B /* Data_Store */ = {
 			isa = PBXGroup;
 			children = (
+				48FF0C1C20E10CF900277ED7 /* elementNameSymbols.csv */,
 				48C601F020D42D8D009A99B7 /* 3DPerovskite.dae */,
 				487EAF7E2083586B00A2D55B /* element_data.txt */,
 				87E4135820DC202A004F7C48 /* MaterialMapAnime_V2.mov */,
@@ -246,6 +249,7 @@
 				48C601F120D42D8D009A99B7 /* 3DPerovskite.dae in Resources */,
 				487EAF812083586C00A2D55B /* HHIs.txt in Resources */,
 				487EAF822083586C00A2D55B /* element_data.txt in Resources */,
+				48FF0C1D20E10CF900277ED7 /* elementNameSymbols.csv in Resources */,
 				48CB9EAC2082BC1300443AAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

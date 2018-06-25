@@ -22,12 +22,14 @@ class PeriodicTableController: UIViewController {
     //Integer used to record how many buttons are pressed
     var numberSelected = 0;
     var aBElementLabels = [UILabel()];
+    var elementNames : [String : String] = [:];
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         aBElementLabels = [aElementSelected, bElementSelected];
         // Do any additional setup after loading the view.
+        elementNames = Data_loader().lookup_element_name(symbol: "He"); //element name is redundant
         resetVariables();
     }
 
