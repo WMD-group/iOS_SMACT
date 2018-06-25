@@ -44,9 +44,10 @@ public func determineChargeNeutral(_ el1: String, _ el2: String, _ el3: String) 
     return cn_list;
 }
 //determinePerRatio determines if charge netural list for given elements contains a perovskite
-public func determinePerRatio(_ cn_list : [[(String, Int)]]) -> String{
+public func determinePerRatio(_ cn_list : [[(String, Int)]]) -> (String, Int){
     
-    var temp : String = "";
+    var resString : String = "";
+    var numberPer : Int = 0;
     
     for item in cn_list{
         // We want to make these look pretty.
@@ -56,30 +57,36 @@ public func determinePerRatio(_ cn_list : [[(String, Int)]]) -> String{
         
         // Check for perovskite-like compositions i.e. = ABX3
         if (item[0].1 == 1) && (item[1].1 == 1) && (item[2].1 == 3){
-            temp += (formula + " <-- Woohoo! We found a 1:1:3 ratio (perovskite)!\n");
+            resString += (formula + "\n"); //+ " <-- Woohoo! We found a 1:1:3 ratio (perovskite)!
+            numberPer += 1
         }else{
-            temp += (formula + "\n");
+            //            resString += (formula + "\n");
         }
     }
-    return temp;
+    return (resString, numberPer);
 }
 
 //Combines determineChargeNeutral & determinePerRatio to produce the desired list output
-public func performComputation(el1: String, el2: String, el3: String) -> (String, Int){
+//Combines determineChargeNeutral & determinePerRatio to produce the desired list output
+public func performComputation(el1: String, el2: String, el3: String) -> (String, String, Int, Int){
     
-    var resultingString : String = "";
+    var resultingString1 : String = "";
+    var resultingString2 : String = "";
     
     let cn_list = determineChargeNeutral(el1, el2, el3);
     
     // And how many are charge neutral (to be used on the next page)
-    resultingString += ("For elements \([el1, el2, el3])\n");
-    resultingString += ("There are \(cn_list.count) charge neutral combinations:\n");
+    //    resultingString += ("For elements \([el1, el2, el3]):\n");
+    resultingString1 += ("Thomas: I found \(cn_list.count) candidate materials.");
     
-    resultingString += determinePerRatio(cn_list);
+    let (temp, numPer) = determinePerRatio(cn_list);
+    //    resultingString += temp;
     
-    resultingString += "************\n";
+    resultingString2 += ("Thomas: \(numPer) will make Perovskites.");
+    // resultingString += temp;
+    //    resultingString += "************\n";
     
-    return (resultingString, cn_list.count);
+    return (resultingString1, resultingString2, cn_list.count, numPer);
 }
 
 /*
@@ -187,17 +194,17 @@ func susLabel(_ score: Int) -> String{
     */
     var msg = "";
     if(score < 2000){
-        msg = "Excellent! You've chosen some very widely available elements."
+        msg = "Excellent!"
     }else if(score >= 2000 && score < 3000){
-        msg = "Very good! You've chosen some very abundant elements."
+        msg = "Very good!"
     }else if(score >= 3000 && score < 5000){
-        msg = "Good! Most of the elements you've chosen are very abundant."
+        msg = "Good!"
     }else if(score >= 5000 && score < 8000){
-        msg = "Average. Some of the elements in this compound are more abundant than others."
+        msg = "Average."
     }else if(score >= 8000 && score <= 10000){
-        msg = "Not great. Some of the elements in this compound are quite rare."
+        msg = "Not great!"
     }else{
-        msg = "Bad! Some of the elements in this compound are very rare!"
+        msg = "Awful!"
     }
     
     return msg;
