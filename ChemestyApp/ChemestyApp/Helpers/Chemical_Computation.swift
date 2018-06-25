@@ -43,10 +43,12 @@ public func determineChargeNeutral(_ el1: String, _ el2: String, _ el3: String) 
     }
     return cn_list;
 }
-//determinePerRatio determines if charge netural list for given elements contains a perovskite
-public func determinePerRatio(_ cn_list : [[(String, Int)]]) -> String{
+//determinePerRatio determines if charge netural list for given elements contains a perovskite and returns number of perovskites
+//only returns the chemical formula for the perovskites
+public func determinePerRatio(_ cn_list : [[(String, Int)]]) -> (String, Int){
     
-    var temp : String = "";
+    var resString : String = "";
+    var numberPer : Int = 0;
     
     for item in cn_list{
         // We want to make these look pretty.
@@ -56,12 +58,13 @@ public func determinePerRatio(_ cn_list : [[(String, Int)]]) -> String{
         
         // Check for perovskite-like compositions i.e. = ABX3
         if (item[0].1 == 1) && (item[1].1 == 1) && (item[2].1 == 3){
-            temp += (formula + " <-- Woohoo! We found a 1:1:3 ratio (perovskite)!\n");
+            resString += (formula + "\n"); //+ " <-- Woohoo! We found a 1:1:3 ratio (perovskite)!
+            numberPer += 1
         }else{
-            temp += (formula + "\n");
+//            resString += (formula + "\n");
         }
     }
-    return temp;
+    return (resString, numberPer);
 }
 
 //Combines determineChargeNeutral & determinePerRatio to produce the desired list output
@@ -72,12 +75,15 @@ public func performComputation(el1: String, el2: String, el3: String) -> (String
     let cn_list = determineChargeNeutral(el1, el2, el3);
     
     // And how many are charge neutral (to be used on the next page)
-    resultingString += ("For elements \([el1, el2, el3])\n");
-    resultingString += ("There are \(cn_list.count) charge neutral combinations:\n");
+//    resultingString += ("For elements \([el1, el2, el3]):\n");
+    resultingString += ("Thomas: I found \(cn_list.count) candidate materials for your elements \([el1, el2, el3]) .\n");
     
-    resultingString += determinePerRatio(cn_list);
+    let (temp, numPer) = determinePerRatio(cn_list);
+//    resultingString += temp;
     
-    resultingString += "************\n";
+    resultingString += ("\(numPer) are Perovskites.\nThe computed Perovskites are: \n");
+    resultingString += temp;
+//    resultingString += "************\n";
     
     return (resultingString, cn_list.count);
 }
