@@ -307,6 +307,9 @@
                             </label>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVK-Hv-sY5" userLabel="X1" customClass="RoundButton" customModule="The_Material_Discovery_Challenge" customModuleProvider="target">
 =======
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVK-Hv-sY5" userLabel="X1" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
@@ -327,6 +330,9 @@
                             </button>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVK-Hv-sY6" userLabel="VidButton" customClass="RoundButton" customModule="The_Material_Discovery_Challenge" customModuleProvider="target">
 =======
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVK-Hv-sY6" userLabel="VidButton" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
@@ -1497,6 +1503,9 @@
                             </label>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;2&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmV-hk-xqU" customClass="RoundLabel" customModule="The_Material_Discovery_Challenge" customModuleProvider="target">
 =======
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;2&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmV-hk-xqU" customClass="RoundLabel" customModule="ChemestyApp" customModuleProvider="target">
@@ -1517,6 +1526,9 @@
                             </label>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;1&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61t-xm-tpe" customClass="RoundLabel" customModule="The_Material_Discovery_Challenge" customModuleProvider="target">
 =======
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;1&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61t-xm-tpe" customClass="RoundLabel" customModule="ChemestyApp" customModuleProvider="target">
@@ -1537,6 +1549,9 @@
                             </label>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;3&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaY-J5-KDG" customClass="RoundLabel" customModule="The_Material_Discovery_Challenge" customModuleProvider="target">
 =======
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;3&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaY-J5-KDG" customClass="RoundLabel" customModule="ChemestyApp" customModuleProvider="target">
@@ -1569,9 +1584,12 @@
 =======
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTN-UH-U4I" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
 >>>>>>> 7136d4029fc0893f77cd576c733c2aa37eb5a4e1
+<<<<<<< HEAD
 =======
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTN-UH-U4I" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
 >>>>>>> parent of 2fa4fb6... Update app icon and name (name is too long) and also removed the name field from the last page of the app - perhaps a future addition
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                                 <rect key="frame" x="878" y="626" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.039215686270000001" green="0.50588235290000005" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1695,6 +1713,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sustainability Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmX-eJ-hbh">
                                 <rect key="frame" x="518" y="430" width="199" height="29"/>
@@ -1702,15 +1721,24 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sustainability Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmX-eJ-hbh">
                                 <rect key="frame" x="537" y="388" width="199" height="29"/>
 >>>>>>> parent of 2fa4fb6... Update app icon and name (name is too long) and also removed the name field from the last page of the app - perhaps a future addition
+=======
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sustainability Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmX-eJ-hbh">
+                                <rect key="frame" x="518" y="430" width="199" height="29"/>
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7136d4029fc0893f77cd576c733c2aa37eb5a4e1
 =======
 >>>>>>> parent of 2fa4fb6... Update app icon and name (name is too long) and also removed the name field from the last page of the app - perhaps a future addition
+=======
+>>>>>>> 7136d4029fc0893f77cd576c733c2aa37eb5a4e1
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                             <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xbl-Rd-GwA">
                                 <rect key="frame" x="41" y="129" width="400" height="449"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1733,13 +1761,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="text 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wq-cf-Ber">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                                 <rect key="frame" x="534" y="321" width="158" height="21"/>
 =======
                                 <rect key="frame" x="725" y="325" width="158" height="21"/>
 >>>>>>> 7136d4029fc0893f77cd576c733c2aa37eb5a4e1
+<<<<<<< HEAD
 =======
                                 <rect key="frame" x="537" y="350" width="158" height="21"/>
 >>>>>>> parent of 2fa4fb6... Update app icon and name (name is too long) and also removed the name field from the last page of the app - perhaps a future addition
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -1748,13 +1782,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="text 2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWC-aJ-zvl">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                                 <rect key="frame" x="534" y="387" width="346" height="64"/>
 =======
                                 <rect key="frame" x="518" y="459" width="346" height="64"/>
 >>>>>>> 7136d4029fc0893f77cd576c733c2aa37eb5a4e1
+<<<<<<< HEAD
 =======
                                 <rect key="frame" x="537" y="416" width="346" height="64"/>
 >>>>>>> parent of 2fa4fb6... Update app icon and name (name is too long) and also removed the name field from the last page of the app - perhaps a future addition
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -1776,13 +1816,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Solar Efficiency:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxg-cp-2gN">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                                 <rect key="frame" x="534" y="424" width="270" height="76"/>
 =======
                                 <rect key="frame" x="518" y="354" width="270" height="76"/>
 >>>>>>> 7136d4029fc0893f77cd576c733c2aa37eb5a4e1
+<<<<<<< HEAD
 =======
                                 <rect key="frame" x="537" y="453" width="270" height="76"/>
 >>>>>>> parent of 2fa4fb6... Update app icon and name (name is too long) and also removed the name field from the last page of the app - perhaps a future addition
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -1791,13 +1837,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="text 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mw9-Du-lGj">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                                 <rect key="frame" x="534" y="500" width="270" height="21"/>
 =======
                                 <rect key="frame" x="725" y="378" width="149" height="29"/>
 >>>>>>> 7136d4029fc0893f77cd576c733c2aa37eb5a4e1
+<<<<<<< HEAD
 =======
                                 <rect key="frame" x="537" y="529" width="270" height="21"/>
 >>>>>>> parent of 2fa4fb6... Update app icon and name (name is too long) and also removed the name field from the last page of the app - perhaps a future addition
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -1806,13 +1858,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Colour:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keV-Nq-Jf6">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                                 <rect key="frame" x="534" y="284" width="63" height="29"/>
 =======
                                 <rect key="frame" x="518" y="317" width="63" height="29"/>
 >>>>>>> 7136d4029fc0893f77cd576c733c2aa37eb5a4e1
+<<<<<<< HEAD
 =======
                                 <rect key="frame" x="537" y="313" width="63" height="29"/>
 >>>>>>> parent of 2fa4fb6... Update app icon and name (name is too long) and also removed the name field from the last page of the app - perhaps a future addition
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -1821,13 +1879,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chemical Formula:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmX-eJ-hbi">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                                 <rect key="frame" x="534" y="226" width="180" height="29"/>
 =======
                                 <rect key="frame" x="518" y="259" width="180" height="29"/>
 >>>>>>> 7136d4029fc0893f77cd576c733c2aa37eb5a4e1
+<<<<<<< HEAD
 =======
                                 <rect key="frame" x="537" y="255" width="180" height="29"/>
 >>>>>>> parent of 2fa4fb6... Update app icon and name (name is too long) and also removed the name field from the last page of the app - perhaps a future addition
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -1836,13 +1900,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Moc-ef-L0T">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                                 <rect key="frame" x="534" y="263" width="270" height="21"/>
 =======
                                 <rect key="frame" x="725" y="267" width="270" height="21"/>
 >>>>>>> 7136d4029fc0893f77cd576c733c2aa37eb5a4e1
+<<<<<<< HEAD
 =======
                                 <rect key="frame" x="537" y="292" width="270" height="21"/>
 >>>>>>> parent of 2fa4fb6... Update app icon and name (name is too long) and also removed the name field from the last page of the app - perhaps a future addition
+=======
+>>>>>>> e79cce41da3a9aba9298aaafc3121a67d9931b05
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
