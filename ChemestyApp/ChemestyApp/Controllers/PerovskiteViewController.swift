@@ -23,7 +23,7 @@ class PerovskiteViewController: UIViewController {
         
         //Delays:
         //Move Thomas up after 5 seconds
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
             UIView.animate(withDuration: 1, animations:{
                 self.ThomasImage.isHidden = false;
                 self.SpeechBubble.isHidden = false;
@@ -36,7 +36,7 @@ class PerovskiteViewController: UIViewController {
         
         //Creating the scene for the 3D material
 //        let scene = SCNScene();
-        let scene = SCNScene(named: "3DPerovskite.dae")!;
+        let scene = SCNScene(named: "3DPerovskite2.dae")!;
         
 //        let cameraNode = SCNNode();
 //        cameraNode.camera = SCNCamera();

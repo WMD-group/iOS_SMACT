@@ -162,7 +162,7 @@ func maximumEfficiency(_ bandGap: Float) -> Float{
 //mostLikelyColour function used to determine the most likely colour of a set of elements
 func mostLikelyColour(_ bandGap: Float) -> String{
     
-    let colourMapping : [Float : String] = [3.5 : "Colourless", 3 : "Green", 2.5: "Yellow", 2:"Orange", 1.5:"Red", 1:"Black"];
+    let colourMapping : [Float : String] = [3.5 : "Colourless", 3 : "Green", 2.5: "Yellow", 2:"Orange", 1.5:"Red", 1:"Nearly Black"];
     
     //Using approximate rounding to determine the most likely colour
     let value = ( (bandGap-0.2)*2).rounded()/2;
@@ -172,7 +172,7 @@ func mostLikelyColour(_ bandGap: Float) -> String{
     }else if(value > 3.5){
         return colourMapping[3.5]!;
     }else{
-        return colourMapping[1]!;
+        return "Black";
     }
 }
 
@@ -187,7 +187,13 @@ func calcSusScore(_ el1: Element, _ el2:Element, _ el3: Element) -> Int {
     let a = el1.HHI_r!
     let b = el2.HHI_r!
     let c = el3.HHI_r!
-    return (Int(a+b+c));
+    let d = a+b+c;
+    if (d < 20000) {
+        return (Int(20000-a+b+c))
+    }
+    else {
+        return (0)
+    }
 }
 
 //susLabel function used to assign the appropriate label to a sus score

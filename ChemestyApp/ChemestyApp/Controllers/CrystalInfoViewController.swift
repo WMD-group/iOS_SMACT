@@ -48,10 +48,10 @@ class CrystalInfoViewController: UIViewController {
         let bandGap = calcBandGap(elObjList[0],elObjList[1],elObjList[2]);
         colourLabel.text = mostLikelyColour(bandGap);
         let susScore = calcSusScore(elObjList[0],elObjList[1],elObjList[2]);
-        scoreLabel.text = String(susScore) + " - " + susLabel(susScore);
+        scoreLabel.text = String(susScore) + "/ 20000";
         efficiencyLabel.text = String(maximumEfficiency(bandGap)) + "%";
         
-        let scene = SCNScene(named: "3DPerovskite.dae")!;
+        let scene = SCNScene(named: "3DPerovskite1.dae")!;
         sceneView.scene = scene;
     }
     

@@ -11,9 +11,17 @@ import SpriteKit
 
 class CrystalOptionsController: UIViewController {
     
+    //Perovskite Images to simulate 'computation'.
+    @IBOutlet weak var PerovImage : UIImageView!
+    
+    // Only show buttons when complete
+    @IBOutlet weak var TakeALook: UIButton!
+    @IBOutlet weak var TryAgain: UIButton!
+    
     // Thomas' Head Terminal and Perovskite structure
     @IBOutlet weak var ThomasHeadTerm: UIImageView!
     @IBOutlet weak var ThomasHeadTerm1: UIImageView!
+    
     //@IBOutlet weak var MaterialMap: UIImageView!
     
     // Different Pseudo Code Labels
@@ -88,111 +96,198 @@ class CrystalOptionsController: UIViewController {
             self.ThomasHeadTerm1.isHidden = false;
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                self.PseudoCode2.text = "Thomas: Running wake-up scripts ...";
+                self.PseudoCode2.text = "Thomas: Running start-up scripts ...";
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
                     self.PseudoCode3.text = "Thomas: Done!";
                     
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                         self.PseudoCode4.text = "Thomas: Initializing Material Discovery software.";
+                        self.PerovImage.image = UIImage(named: "Perovskite0");
                         
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
                             self.PseudoCode5.text = "Thomas: Done!";
                             
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                                self.PseudoCode1.text = "Thomas: Running wake-up scripts ...";
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+                                self.PseudoCode1.text = "Thomas: Running start-up scripts ...";
                                 self.PseudoCode2.text = "Thomas: Done!";
-                                self.PseudoCode3.text = "Thomas: Initializing material discovery software.";
+                                self.PseudoCode3.text = "Thomas: Initializing Material Discovery software.";
                                 self.PseudoCode4.text = "Thomas: Done!";
-                                self.PseudoCode5.text = "Thomas: Calculating all possible elemental combinations.";
+                                self.PseudoCode5.text = "Thomas: Starting calculation.";
+                                self.PerovImage.image = UIImage(named: "Perovskite1");
+                            
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                self.PerovImage.image = UIImage(named: "Perovskite2");
                                 
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
-                                    self.PseudoCode1.text = "Thomas: Done!";
-                                    self.PseudoCode2.text = "Thomas: Initializing material discovery software.";
-                                    self.PseudoCode3.text = "Thomas: Done!";
-                                    self.PseudoCode4.text = "Thomas: Calculating all elemental combinations.";
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                self.PseudoCode1.text = "Thomas: Done!";
+                                self.PseudoCode2.text = "Thomas: Initializing material discovery software.";
+                                self.PseudoCode3.text = "Thomas: Done!";
+                                self.PseudoCode4.text = "Thomas: Starting calculation.";
+                                self.PseudoCode5.text = "Thomas: Calculating all possible elemental combinations.";
+                                self.PerovImage.image = UIImage(named: "Perovskite3");
+                                
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                    self.PerovImage.image = UIImage(named: "Perovskite1");
+                                
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                                    self.PseudoCode1.text = "Thomas: Initializing material discovery software.";
+                                    self.PseudoCode2.text = "Thomas: Done!";
+                                    self.PseudoCode3.text = "Thomas: Starting calculation.";
+                                    self.PseudoCode4.text = "Thomas: Calculating all possible elemental combinations.";
                                     self.PseudoCode5.text = "Thomas: Done!";
                                     
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                                        self.PseudoCode1.text = "Thomas: Initializing material discovery software.";
-                                        self.PseudoCode2.text = "Thomas: Done!";
-                                        self.PseudoCode3.text = "Thomas: Calculating all elemental combinations.";
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                                        self.PerovImage.image = UIImage(named: "Perovskite2");
+                                        
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                            self.PerovImage.image = UIImage(named: "Perovskite3");
+
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                                        self.PseudoCode1.text = "Thomas: Done!";
+                                        self.PseudoCode2.text = "Thomas: Starting calculation.";
+                                        self.PseudoCode3.text = "Thomas: Calculating all possible elemental combinations.";
                                         self.PseudoCode4.text = "Thomas: Done!";
                                         self.PseudoCode5.text = "Thomas: Calculating charge neutral combinations.";
-                                        
-                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
-                                            self.PseudoCode1.text = "Thomas: Done!";
-                                            self.PseudoCode2.text = "Thomas: Calculating all elemental combinations.";
+
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                                            self.PerovImage.image = UIImage(named: "Perovskite1");
+                                            
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                                            self.PseudoCode1.text = "Thomas: Starting calculation.";
+                                            self.PseudoCode2.text = "Thomas: Calculating all possible elemental combinations.";
                                             self.PseudoCode3.text = "Thomas: Done!";
                                             self.PseudoCode4.text = "Thomas: Calculating charge neutral combinations.";
                                             self.PseudoCode5.text = "Thomas: Done!";
                                             
-                                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                                                self.PseudoCode1.text = "Thomas: Calculating all elemental combinations.";
+                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                                                self.PerovImage.image = UIImage(named: "Perovskite2");
+                                                
+                                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                                    self.PerovImage.image = UIImage(named: "Perovskite3");
+                                            
+                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                                                self.PseudoCode1.text = "Thomas: Calculating all possible elemental combinations.";
                                                 self.PseudoCode2.text = "Thomas: Done!";
                                                 self.PseudoCode3.text = "Thomas: Calculating charge neutral combinations.";
                                                 self.PseudoCode4.text = "Thomas: Done!";
-                                                self.PseudoCode5.text = "Thomas: All calculations are complete.";
+                                                self.PseudoCode5.text = "Thomas: Attempting to fit candidates into perovskite structure.";
                                                 
-                                                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                                                    self.PseudoCode1.text = "Thomas: Done!";
-                                                    self.PseudoCode2.text = "Thomas: Calculating charge neutral combinations.";
-                                                    self.PseudoCode3.text = "Thomas: Done!";
-                                                    self.PseudoCode4.text = "Thomas: All calculations complete.";
-                                                    self.PseudoCode5.text = "Thomas: ...";
+                                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                                                    self.PerovImage.image = UIImage(named: "Perovskite1");
                                                     
-                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
-                                                        self.PseudoCode1.text = "Thomas: Calculating charge neutral combinations.";
-                                                        self.PseudoCode2.text = "Thomas: Done!";
-                                                        self.PseudoCode3.text = "Thomas: All calculations complete.";
-                                                        self.PseudoCode4.text = "Thomas: ...";
+                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                                        self.PerovImage.image = UIImage(named: "Perovskite2");
+                                                
+                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                                                        self.PseudoCode1.text = "Thomas: Done!";
+                                                        self.PseudoCode2.text = "Thomas: Calculating charge neutral combinations.";
+                                                        self.PseudoCode3.text = "Thomas: Done!";
+                                                        self.PseudoCode4.text = "Thomas: Attempting to fit candidates into perovskite structure.";
+                                                        self.PseudoCode5.text = "Thomas: Done!";
+                                                        
+                                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                                                            self.PerovImage.image = UIImage(named: "Perovskite2");
+                                                            
+                                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                                                self.PerovImage.image = UIImage(named: "Perovskite3");
+                                                    
+                                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                                                            self.PseudoCode1.text = "Thomas: Calculating charge neutral combinations.";
+                                                            self.PseudoCode2.text = "Thomas: Done!";
+                                                            self.PseudoCode3.text = "Thomas: Attempting to fit candidates into perovskite structure.";
+                                                            self.PseudoCode4.text = "Thomas: Done!";
+                                                            self.PseudoCode5.text = "Thomas: All calculations complete.";
+                                                            
+                                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                                                                self.PerovImage.image = UIImage(named: "Perovskite2");
+                                                                
+                                                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                                                    self.PerovImage.image = UIImage(named: "Perovskite3");
+                                                            
+                                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
+                                                                        self.PseudoCode1.text = "Thomas: Done!";
+                                                                        self.PseudoCode2.text = "Thomas: Attempting to fit candidates into perovskite structure.";
+                                                                        self.PseudoCode3.text = "Thomas: Done!";
+                                                                        self.PseudoCode4.text = "Thomas: All calculations complete.";
+                                                                        self.PseudoCode5.text = "Thomas: ... ... ... ... ... ... ...";
+                                                                        self.PerovImage.image = UIImage(named: "QuestionMark");
+                                                            
+                                                            
+                                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                                    self.PseudoCode1.text = "Thomas: Attempting to fit candidates into perovskite structure.";
+                                                    self.PseudoCode2.text = "Thomas: Done!";
+                                                    self.PseudoCode3.text = "Thomas: All calculations complete.";
+                                                    self.PseudoCode4.text = "Thomas: ... ... ... ... ... ... ...";
+                                                    self.PseudoCode5.text = "Thomas: ... ... ... ... ... ... ...";
+                                                    
+                                                    
+                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                                                        self.PseudoCode1.text = "Thomas: Done!";
+                                                        self.PseudoCode2.text = "Thomas: All calculations complete.";
+                                                        self.PseudoCode3.text = "Thomas: ... ... ... ... ... ... ...";
+                                                        self.PseudoCode4.text = "Thomas: ... ... ... ... ... ... ...";
                                                         self.PseudoCode5.text = self.computedResult1;
                                                     
                                                         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                                                            self.PseudoCode1.text = "Thomas: Done!";
                                                             self.PseudoCode2.text = "Thomas: All calculations complete.";
-                                                            self.PseudoCode3.text = "Thomas: ...";
+                                                            self.PseudoCode3.text = "Thomas: ... ... ... ... ... ... ...";
+                                                            self.PseudoCode3.text = "Thomas: ... ... ... ... ... ... ...";
                                                             self.PseudoCode4.text = self.computedResult1;
                                                             self.PseudoCode5.text = self.computedResult2;
                                                             
-                                                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                                                                self.PseudoCode1.text = "Thomas: All calculations complete.";
-                                                                self.PseudoCode2.text = "Thomas: ...";
+                                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                                                self.PseudoCode1.text = "Thomas: ... ... ... ... ... ... ...";
+                                                                self.PseudoCode2.text = "Thomas: ... ... ... ... ... ... ...";
                                                                 self.PseudoCode3.text = self.computedResult1;
                                                                 self.PseudoCode4.text = self.computedResult2;
-                                                                self.PseudoCode5.text = "Thomas: ...";
+                                                                self.PseudoCode5.text = "Thomas: ... ... ... ... ... ... ...";
+                                                                
+                                                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                                                    self.PseudoCode1.text = "Thomas: ... ... ... ... ... ... ...";
+                                                                    self.PseudoCode2.text = self.computedResult1;
+                                                                    self.PseudoCode3.text = self.computedResult2;
+                                                                    self.PseudoCode4.text = "Thomas: ... ... ... ... ... ... ...";
+                                                                    self.PseudoCode5.text = "Thomas: ... ... ... ... ... ... ...";
                                                                 
                                                         if self.numberOfPerov == 0 {
-                                                    
+                                                            
+                                                            self.PerovImage.image = UIImage(named: "Perovskite4");
+                                                            self.TryAgain.isHidden = false;
+                                                            
                                                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                                                                self.PseudoCode1.text = "Thomas: ...";
-                                                                self.PseudoCode2.text = self.computedResult1;
-                                                                self.PseudoCode3.text = self.computedResult2;
-                                                                self.PseudoCode4.text = "Thomas: ...";
+                                                                self.PseudoCode1.text = self.computedResult1;
+                                                                self.PseudoCode2.text = self.computedResult2;
+                                                                self.PseudoCode3.text = "Thomas: ... ... ... ... ... ... ...";
+                                                                self.PseudoCode4.text = "Thomas: ... ... ... ... ... ... ...";
                                                                 self.PseudoCode5.text = "Thomas: Oh no! We didn't discover a new Perovskite this time.";
                                                     
                                                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                                                                    self.PseudoCode1.text = self.computedResult1;
                                                                     self.PseudoCode2.text = self.computedResult2;
-                                                                    self.PseudoCode3.text = "Thomas: ...";
+                                                                    self.PseudoCode3.text = "Thomas: ... ... ... ... ... ... ...";
+                                                                    self.PseudoCode3.text = "Thomas: ... ... ... ... ... ... ...";
                                                                     self.PseudoCode4.text = "Thomas: Oh no! We didn't discover a new Perovskite this time.";
-                                                                    self.PseudoCode5.text = "Thomas: Press 'Back' to try again.";
+                                                                    self.PseudoCode5.text = "Thomas: Press 'Try Again' to have another go.";
                                                                 }
                                                             }
                                                         }
                                                             else {
+                                                            
+                                                            self.PerovImage.image = UIImage(named: "Perovskite1");
+                                                            self.TakeALook.isHidden = false;
 
                                                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                                                                self.PseudoCode1.text = "Thomas: ...";
-                                                                self.PseudoCode2.text = self.computedResult1;
-                                                                self.PseudoCode3.text = self.computedResult2;
-                                                                self.PseudoCode4.text = "Thomas: ...";
+                                                                self.PseudoCode1.text = self.computedResult1;
+                                                                self.PseudoCode2.text = self.computedResult2;
+                                                                self.PseudoCode3.text = "Thomas: ... ... ... ... ... ... ...";
+                                                                self.PseudoCode4.text = "Thomas: ... ... ... ... ... ... ...";
                                                                 self.PseudoCode5.text = "Thomas: Wooohoo! We discovered a new perovskite!";
                                                                 
+                                                                
                                                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                                                                    self.PseudoCode1.text = self.computedResult1;
-                                                                    self.PseudoCode2.text = self.computedResult2;
-                                                                    self.PseudoCode3.text = "Thomas: ...";
+                                                                    self.PseudoCode1.text = self.computedResult2;
+                                                                    self.PseudoCode2.text = "Thomas: ... ... ... ... ... ... ...";
+                                                                    self.PseudoCode3.text = "Thomas: ... ... ... ... ... ... ...";
                                                                     self.PseudoCode4.text = "Thomas: Wooohoo! We discovered a new perovskite!";
                                                                     self.PseudoCode5.text = "Thomas: Press 'Next' to take a closer look.";
                                                                 }
@@ -206,6 +301,27 @@ class CrystalOptionsController: UIViewController {
                     }
                 }
             }
+                                                    }
+                                                    
+                                                    
+                                                                }
+                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                                }
+                                                            }
+                                                        }
+                                                        
+                                                    }
+                                                }
+                                                    }
+                                                }
+                                            }
+                                            }
+                                        }
+                                            }
                                                 }
                                             }
                                         }
