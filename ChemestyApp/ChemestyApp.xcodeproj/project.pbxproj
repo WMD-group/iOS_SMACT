@@ -195,7 +195,7 @@
 			);
 			name = ChemestyApp;
 			productName = ChemestyApp;
-			productReference = 48CB9EA32082BC1300443AAD /* The Material Discovery Challenge.app */;
+			productReference = 48CB9EA32082BC1300443AAD /* ChemestyApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -440,7 +440,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Edward.iPadApp;
-				PRODUCT_NAME = "The Material Discovery Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -458,7 +458,6 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Edward.iPadApp;
-				PRODUCT_NAME = "The Material Discovery Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
