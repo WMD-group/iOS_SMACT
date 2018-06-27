@@ -9,13 +9,13 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "60x60.png",
+      "filename" : "appicon copy.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "58x58.png",
+      "filename" : "appicon copy-1.png",
       "scale" : "2x"
     },
     {
@@ -69,7 +69,7 @@
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "58x58-1.png",
+      "filename" : "58x58.png",
       "scale" : "2x"
     },
     {
