@@ -52,7 +52,7 @@
 		487EAF802083586C00A2D55B /* SSE.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SSE.csv; sourceTree = "<group>"; };
 		488E65C2208363ED00AF1E1F /* CrystalOptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrystalOptionsController.swift; sourceTree = "<group>"; };
 		48C601F020D42D8D009A99B7 /* 3DPerovskite.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = 3DPerovskite.dae; sourceTree = "<group>"; };
-		48CB9EA32082BC1300443AAD /* ChemestyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChemestyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48CB9EA32082BC1300443AAD /* The Material Discovery Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Material Discovery Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48CB9EA62082BC1300443AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48CB9EAB2082BC1300443AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48CB9EB02082BC1400443AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 		48CB9EA42082BC1300443AAD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				48CB9EA32082BC1300443AAD /* ChemestyApp.app */,
+				48CB9EA32082BC1300443AAD /* The Material Discovery Challenge.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 			);
 			name = ChemestyApp;
 			productName = ChemestyApp;
-			productReference = 48CB9EA32082BC1300443AAD /* ChemestyApp.app */;
+			productReference = 48CB9EA32082BC1300443AAD /* The Material Discovery Challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -440,7 +440,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Edward.iPadApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "The Material Discovery Challenge";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -458,7 +458,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Edward.iPadApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "The Material Discovery Challenge";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
