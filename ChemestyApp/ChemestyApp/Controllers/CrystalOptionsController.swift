@@ -187,10 +187,10 @@ class CrystalOptionsController: UIViewController {
                                                         self.PseudoCode5.text = "Thomas: Done!";
                                                         
                                                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
-                                                            self.PerovImage.image = UIImage(named: "Perovskite2");
+                                                            self.PerovImage.image = UIImage(named: "Perovskite3");
                                                             
                                                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                                                self.PerovImage.image = UIImage(named: "Perovskite3");
+                                                                self.PerovImage.image = UIImage(named: "Perovskite1");
                                                     
                                                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                                                             self.PseudoCode1.text = "Thomas: Calculating charge neutral combinations.";
@@ -199,13 +199,10 @@ class CrystalOptionsController: UIViewController {
                                                             self.PseudoCode4.text = "Thomas: Done!";
                                                             self.PseudoCode5.text = "Thomas: All calculations complete.";
                                                             
-                                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
                                                                 self.PerovImage.image = UIImage(named: "Perovskite2");
-                                                                
-                                                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                                                    self.PerovImage.image = UIImage(named: "Perovskite3");
                                                             
-                                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
+                                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                                                                         self.PseudoCode1.text = "Thomas: Done!";
                                                                         self.PseudoCode2.text = "Thomas: Attempting to fit candidates into perovskite structure.";
                                                                         self.PseudoCode3.text = "Thomas: Done!";
@@ -222,14 +219,14 @@ class CrystalOptionsController: UIViewController {
                                                     self.PseudoCode5.text = "Thomas: ... ... ... ... ... ... ...";
                                                     
                                                     
-                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                                                         self.PseudoCode1.text = "Thomas: Done!";
                                                         self.PseudoCode2.text = "Thomas: All calculations complete.";
                                                         self.PseudoCode3.text = "Thomas: ... ... ... ... ... ... ...";
                                                         self.PseudoCode4.text = "Thomas: ... ... ... ... ... ... ...";
                                                         self.PseudoCode5.text = self.computedResult1;
                                                     
-                                                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                                                             self.PseudoCode2.text = "Thomas: All calculations complete.";
                                                             self.PseudoCode3.text = "Thomas: ... ... ... ... ... ... ...";
                                                             self.PseudoCode3.text = "Thomas: ... ... ... ... ... ... ...";
@@ -253,7 +250,7 @@ class CrystalOptionsController: UIViewController {
                                                         if self.numberOfPerov == 0 {
                                                             
                                                             self.PerovImage.image = UIImage(named: "Perovskite4");
-                                                            self.TryAgain.isHidden = false;
+                                                            
                                                             
                                                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                                                                 self.PseudoCode1.text = self.computedResult1;
@@ -261,6 +258,7 @@ class CrystalOptionsController: UIViewController {
                                                                 self.PseudoCode3.text = "Thomas: ... ... ... ... ... ... ...";
                                                                 self.PseudoCode4.text = "Thomas: ... ... ... ... ... ... ...";
                                                                 self.PseudoCode5.text = "Thomas: Oh no! We didn't discover a new Perovskite this time.";
+                                                                self.TryAgain.isHidden = false;
                                                     
                                                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                                                                     self.PseudoCode2.text = self.computedResult2;
@@ -274,7 +272,7 @@ class CrystalOptionsController: UIViewController {
                                                             else {
                                                             
                                                             self.PerovImage.image = UIImage(named: "Perovskite1");
-                                                            self.TakeALook.isHidden = false;
+                                                            
 
                                                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                                                                 self.PseudoCode1.text = self.computedResult1;
@@ -282,7 +280,7 @@ class CrystalOptionsController: UIViewController {
                                                                 self.PseudoCode3.text = "Thomas: ... ... ... ... ... ... ...";
                                                                 self.PseudoCode4.text = "Thomas: ... ... ... ... ... ... ...";
                                                                 self.PseudoCode5.text = "Thomas: Wooohoo! We discovered a new perovskite!";
-                                                                
+                                                                self.TakeALook.isHidden = false;
                                                                 
                                                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                                                                     self.PseudoCode1.text = self.computedResult2;
@@ -304,7 +302,7 @@ class CrystalOptionsController: UIViewController {
                                                     }
                                                     
                                                     
-                                                                }
+                                                                
                                                             }
                                                                         }
                                                                     }

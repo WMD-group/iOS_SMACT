@@ -189,7 +189,7 @@ func calcSusScore(_ el1: Element, _ el2:Element, _ el3: Element) -> Int {
     let c = el3.HHI_r!
     let d = a+b+c;
     if (d < 20000) {
-        return (Int(20000-a+b+c))
+        return (Int(20000-(a+b+c)))
     }
     else {
         return (0)
