@@ -23,7 +23,7 @@ class PerovskiteViewController: UIViewController {
         
         //Delays:
         //Move Thomas up after 5 seconds
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             UIView.animate(withDuration: 1, animations:{
                 self.ThomasImage.isHidden = false;
                 self.SpeechBubble.isHidden = false;

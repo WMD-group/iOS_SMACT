@@ -39,7 +39,7 @@ public class TestInit{
 //        print(elementMn.concatObjectData());
         
 //        let test_case1 = ["Na","Ti","F"];
-//        let test_case2 = ["Na","K","Cl"];
+//        let test_case2 = ["Na","K","Cl"];#imageLiteral(resourceName: "ThomasHead1.png")
 //        let test_case3 = ["Fe","Cu","Cl"];
 //        let test_cases = [test_case1, test_case2, test_case3];
         let test_case1 = [el1, el2, el3];
