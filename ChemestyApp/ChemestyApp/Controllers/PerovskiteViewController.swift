@@ -14,9 +14,11 @@ class PerovskiteViewController: UIViewController {
     @IBOutlet weak var sceneView: SCNView!
     
     
+    
     @IBOutlet weak var ThomasImage: UIImageView!
     @IBOutlet weak var SpeechBubble: UIImageView!
     @IBOutlet weak var SpeechLabel: UILabel!
+    @IBOutlet weak var ChemicalFormula: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad();

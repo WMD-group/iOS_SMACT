@@ -227,8 +227,8 @@ class CrystalOptionsController: UIViewController {
                                                         self.PseudoCode5.text = self.computedResult1;
                                                     
                                                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                                            self.PseudoCode2.text = "Thomas: All calculations complete.";
-                                                            self.PseudoCode3.text = "Thomas: ... ... ... ... ... ... ...";
+                                                            self.PseudoCode1.text = "Thomas: All calculations complete.";
+                                                            self.PseudoCode2.text = "Thomas: ... ... ... ... ... ... ...";
                                                             self.PseudoCode3.text = "Thomas: ... ... ... ... ... ... ...";
                                                             self.PseudoCode4.text = self.computedResult1;
                                                             self.PseudoCode5.text = self.computedResult2;

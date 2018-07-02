@@ -63,22 +63,15 @@
                                 <rect key="frame" x="512" y="129" width="424" height="428"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is the Perovskite crystal structure." lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcU-QZ-Byw" userLabel="InfoParagraph">
-                                <rect key="frame" x="522" y="155" width="394" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="22"/>
-                                <color key="textColor" red="0.33313195509999999" green="0.3515727038" blue="0.39639514590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It is made of three building blocks, or elements, called 'A' (yellow), 'B' (red) and 'X' (blue)." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcU-QZ-Cyw" userLabel="InfoParagraph">
-                                <rect key="frame" x="523" y="212" width="381" height="104"/>
+                                <rect key="frame" x="522" y="219" width="381" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="22"/>
                                 <color key="textColor" red="0.33313195509999999" green="0.3515727038" blue="0.39639514590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="For every 1 'A' there is '1' B and 3 'Xs' - so we say that it has the chemical formula ABX." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcU-QZ-Dyw" userLabel="InfoParagraph">
-                                <rect key="frame" x="523" y="304" width="381" height="107"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In a 3D Perovskite material, for every 1 'A' there is '1' B and 3 'Xs'." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcU-QZ-Dyw" userLabel="InfoParagraph">
+                                <rect key="frame" x="522" y="305" width="381" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="22"/>
                                 <color key="textColor" red="0.33313195509999999" green="0.3515727038" blue="0.39639514590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -112,11 +105,19 @@
                                 <rect key="frame" x="576" y="608" width="158" height="374"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is the Perovskite crystal structure." lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcU-QZ-Byw" userLabel="InfoParagraph">
+                                <rect key="frame" x="522" y="160" width="394" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="22"/>
+                                <color key="textColor" red="0.33313195509999999" green="0.3515727038" blue="0.39639514590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.53528296409999998" green="0.5745013162" blue="0.61024746190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="Gna-pc-MZl"/>
                     </view>
                     <connections>
+                        <outlet property="ChemicalFormula" destination="FcU-QZ-Dyw" id="OR9-hS-Zpv"/>
                         <outlet property="SpeechBubble" destination="tYy-xK-e6b" id="OR9-gS-Zpv"/>
                         <outlet property="SpeechLabel" destination="fvw-ah-8HJ" id="GhR-aj-WP3"/>
                         <outlet property="ThomasImage" destination="ryf-uk-sp7" id="ADb-gE-kb7"/>
@@ -163,7 +164,7 @@
                                 <rect key="frame" x="250" y="676" width="122" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi, I'm Thomas the supercomputer!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="51" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KA-8M-jlD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi, I'm Thomas the Super-Computer!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="51" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KA-8M-jlD">
                                 <rect key="frame" x="306" y="190" width="449" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
@@ -312,20 +313,6 @@
                                     <action selector="SolarPanelXButton:" destination="LGy-ci-I40" eventType="touchUpInside" id="lMg-lj-ov7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYW-Ml-ScN" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
-                                <rect key="frame" x="29" y="648" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.7246772663336033" green="0.82879197305950036" blue="0.89276649746192893" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="32"/>
-                                <color key="tintColor" red="0.33313195509685939" green="0.35157270383435368" blue="0.39639514593908631" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Back"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="BackButton:" destination="LGy-ci-I40" eventType="touchUpInside" id="HuD-oB-qtb"/>
-                                </connections>
-                            </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVK-Hv-sY6" userLabel="VidButton" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
                                 <rect key="frame" x="699" y="226" width="145" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -343,6 +330,20 @@
                                 <rect key="frame" x="757" y="305" width="298" height="325"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYW-Ml-ScN" customClass="RoundButton" customModule="ChemestyApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="648" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.7246772663336033" green="0.82879197305950036" blue="0.89276649746192893" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="32"/>
+                                <color key="tintColor" red="0.33313195509685939" green="0.35157270383435368" blue="0.39639514593908631" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="BackButton:" destination="LGy-ci-I40" eventType="touchUpInside" id="HuD-oB-qtb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.53528296409999998" green="0.5745013162" blue="0.61024746190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="gzy-ET-ulc"/>
@@ -1546,7 +1547,7 @@
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzW-dH-Ede" userLabel="PseudoCode5">
                                 <rect key="frame" x="61" y="540" width="535" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
