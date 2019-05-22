@@ -24,6 +24,8 @@
 		48CB9EAC2082BC1300443AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CB9EAA2082BC1300443AAD /* Main.storyboard */; };
 		48CB9EB12082BC1400443AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CB9EAF2082BC1400443AAD /* LaunchScreen.storyboard */; };
 		48FF0C1D20E10CF900277ED7 /* elementNameSymbols.csv in Resources */ = {isa = PBXBuildFile; fileRef = 48FF0C1C20E10CF900277ED7 /* elementNameSymbols.csv */; };
+		8742FEC220E2E37E005C8C53 /* 3DPerovskite2.dae in Resources */ = {isa = PBXBuildFile; fileRef = 8742FEC120E2E37E005C8C53 /* 3DPerovskite2.dae */; };
+		8742FEC420E2E382005C8C53 /* 3DPerovskite1.dae in Resources */ = {isa = PBXBuildFile; fileRef = 8742FEC320E2E382005C8C53 /* 3DPerovskite1.dae */; };
 		87E4135920DC202A004F7C48 /* MaterialMapAnime_V2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 87E4135820DC202A004F7C48 /* MaterialMapAnime_V2.mov */; };
 		E405E91620D051FD009235F4 /* Digital_tech.otf in Resources */ = {isa = PBXBuildFile; fileRef = E405E91820D051FD009235F4 /* Digital_tech.otf */; };
 		E405E92020D0637D009235F4 /* digital-7 (italic).ttf in Resources */ = {isa = PBXBuildFile; fileRef = E405E91A20D056D5009235F4 /* digital-7 (italic).ttf */; };
@@ -58,6 +60,8 @@
 		48CB9EB02082BC1400443AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48CB9EB22082BC1400443AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48FF0C1C20E10CF900277ED7 /* elementNameSymbols.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = elementNameSymbols.csv; sourceTree = "<group>"; };
+		8742FEC120E2E37E005C8C53 /* 3DPerovskite2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = 3DPerovskite2.dae; sourceTree = "<group>"; };
+		8742FEC320E2E382005C8C53 /* 3DPerovskite1.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = 3DPerovskite1.dae; sourceTree = "<group>"; };
 		87E4135820DC202A004F7C48 /* MaterialMapAnime_V2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = MaterialMapAnime_V2.mov; sourceTree = "<group>"; };
 		E405E91720D051FD009235F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Digital_tech.otf; sourceTree = "<group>"; };
 		E405E91920D051FF009235F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/Digital_tech.otf; sourceTree = "<group>"; };
@@ -124,8 +128,10 @@
 			children = (
 				48FF0C1C20E10CF900277ED7 /* elementNameSymbols.csv */,
 				48C601F020D42D8D009A99B7 /* 3DPerovskite.dae */,
+				8742FEC320E2E382005C8C53 /* 3DPerovskite1.dae */,
 				487EAF7E2083586B00A2D55B /* element_data.txt */,
 				87E4135820DC202A004F7C48 /* MaterialMapAnime_V2.mov */,
+				8742FEC120E2E37E005C8C53 /* 3DPerovskite2.dae */,
 				487EAF7D2083586B00A2D55B /* HHIs.txt */,
 				487EAF7F2083586C00A2D55B /* oxidation_states.txt */,
 				487EAF802083586C00A2D55B /* SSE.csv */,
@@ -242,6 +248,7 @@
 				87E4135920DC202A004F7C48 /* MaterialMapAnime_V2.mov in Resources */,
 				E405E92320D0637D009235F4 /* digital-7.ttf in Resources */,
 				E44E584520D456A700E2D6D9 /* Assets.xcassets in Resources */,
+				8742FEC420E2E382005C8C53 /* 3DPerovskite1.dae in Resources */,
 				E405E91620D051FD009235F4 /* Digital_tech.otf in Resources */,
 				48CB9EB12082BC1400443AAD /* LaunchScreen.storyboard in Resources */,
 				487EAF832083586C00A2D55B /* oxidation_states.txt in Resources */,
@@ -250,6 +257,7 @@
 				487EAF812083586C00A2D55B /* HHIs.txt in Resources */,
 				487EAF822083586C00A2D55B /* element_data.txt in Resources */,
 				48FF0C1D20E10CF900277ED7 /* elementNameSymbols.csv in Resources */,
+				8742FEC220E2E37E005C8C53 /* 3DPerovskite2.dae in Resources */,
 				48CB9EAC2082BC1300443AAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -43,8 +43,12 @@ public func determineChargeNeutral(_ el1: String, _ el2: String, _ el3: String) 
     }
     return cn_list;
 }
+
+//determinePerRatio determines if charge netural list for given elements contains a perovskite
+
 //determinePerRatio determines if charge netural list for given elements contains a perovskite and returns number of perovskites
 //only returns the chemical formula for the perovskites
+
 public func determinePerRatio(_ cn_list : [[(String, Int)]]) -> (String, Int){
     
     var resString : String = "";
@@ -60,32 +64,39 @@ public func determinePerRatio(_ cn_list : [[(String, Int)]]) -> (String, Int){
         if (item[0].1 == 1) && (item[1].1 == 1) && (item[2].1 == 3){
             resString += (formula + "\n"); //+ " <-- Woohoo! We found a 1:1:3 ratio (perovskite)!
             numberPer += 1
-        }else{
-//            resString += (formula + "\n");
         }
+
+            //            resString += (formula + "\n");
+
+//            resString += (formula + "\n");
+
+        
     }
     return (resString, numberPer);
 }
 
 //Combines determineChargeNeutral & determinePerRatio to produce the desired list output
-public func performComputation(el1: String, el2: String, el3: String) -> (String, Int){
+//Combines determineChargeNeutral & determinePerRatio to produce the desired list output
+public func performComputation(el1: String, el2: String, el3: String) -> (String, String, Int, Int){
     
-    var resultingString : String = "";
+    var resultingString1 : String = "";
+    var resultingString2 : String = "";
     
     let cn_list = determineChargeNeutral(el1, el2, el3);
     
     // And how many are charge neutral (to be used on the next page)
-//    resultingString += ("For elements \([el1, el2, el3]):\n");
-    resultingString += ("Thomas: I found \(cn_list.count) candidate materials for your elements \([el1, el2, el3]) .\n");
+
+    //    resultingString += ("For elements \([el1, el2, el3]):\n");
+    resultingString1 += ("Thomas: I found \(cn_list.count) candidate materials.");
     
     let (temp, numPer) = determinePerRatio(cn_list);
-//    resultingString += temp;
+    //    resultingString += temp;
     
-    resultingString += ("\(numPer) are Perovskites.\nThe computed Perovskites are: \n");
-    resultingString += temp;
-//    resultingString += "************\n";
+    resultingString2 += ("Thomas: \(numPer) will make Perovskites.");
+    // resultingString += temp;
+    //    resultingString += "************\n";
     
-    return (resultingString, cn_list.count);
+    return (resultingString1, resultingString2, cn_list.count, numPer);
 }
 
 /*
@@ -151,7 +162,7 @@ func maximumEfficiency(_ bandGap: Float) -> Float{
 //mostLikelyColour function used to determine the most likely colour of a set of elements
 func mostLikelyColour(_ bandGap: Float) -> String{
     
-    let colourMapping : [Float : String] = [3.5 : "Colourless", 3 : "Green", 2.5: "Yellow", 2:"Orange", 1.5:"Red", 1:"Black"];
+    let colourMapping : [Float : String] = [3.5 : "Colourless", 3 : "Green", 2.5: "Yellow", 2:"Orange", 1.5:"Red", 1:"Nearly Black"];
     
     //Using approximate rounding to determine the most likely colour
     let value = ( (bandGap-0.2)*2).rounded()/2;
@@ -161,7 +172,7 @@ func mostLikelyColour(_ bandGap: Float) -> String{
     }else if(value > 3.5){
         return colourMapping[3.5]!;
     }else{
-        return colourMapping[1]!;
+        return "Black";
     }
 }
 
@@ -176,7 +187,13 @@ func calcSusScore(_ el1: Element, _ el2:Element, _ el3: Element) -> Int {
     let a = el1.HHI_r!
     let b = el2.HHI_r!
     let c = el3.HHI_r!
-    return (Int(a+b+c));
+    let d = a+b+c;
+    if (d < 20000) {
+        return (Int((20000-(a+b+c))/2000));
+    }
+    else {
+        return (0);
+    }
 }
 
 //susLabel function used to assign the appropriate label to a sus score
@@ -193,17 +210,17 @@ func susLabel(_ score: Int) -> String{
     */
     var msg = "";
     if(score < 2000){
-        msg = "Excellent! You've chosen some very widely available elements."
+        msg = "Excellent!"
     }else if(score >= 2000 && score < 3000){
-        msg = "Very good! You've chosen some very abundant elements."
+        msg = "Very good!"
     }else if(score >= 3000 && score < 5000){
-        msg = "Good! Most of the elements you've chosen are very abundant."
+        msg = "Good!"
     }else if(score >= 5000 && score < 8000){
-        msg = "Average. Some of the elements in this compound are more abundant than others."
+        msg = "Average."
     }else if(score >= 8000 && score <= 10000){
-        msg = "Not great. Some of the elements in this compound are quite rare."
+        msg = "Not great!"
     }else{
-        msg = "Bad! Some of the elements in this compound are very rare!"
+        msg = "Awful!"
     }
     
     return msg;

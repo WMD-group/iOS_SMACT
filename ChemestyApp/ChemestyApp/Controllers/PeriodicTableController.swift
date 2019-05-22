@@ -17,7 +17,7 @@ class PeriodicTableController: UIViewController {
     @IBOutlet weak var aElementSelected: UILabel!
     @IBOutlet weak var bElementSelected: UILabel!
     @IBOutlet weak var xElementSelected: UILabel!
-    @IBOutlet weak var sendToThomas: RoundButton!
+    @IBOutlet weak var sendToThomas: UIButton!
     var abElementLabels : [UILabel] = [];
     
     //Full name of element labels
@@ -48,7 +48,7 @@ class PeriodicTableController: UIViewController {
         xElementSelected.text = "<3>";
         aBList = [];
         xElementList = [];
-        sendToThomas.isEnabled = false;
+        //sendToThomas.isHidden = false;
         elementName1.text = "";
         elementName2.text = "";
         elementName3.text = "";
@@ -92,19 +92,19 @@ class PeriodicTableController: UIViewController {
                 if aBList.count == 1{
                     abElementNames[0].text = "";
                     abElementLabels[0].text = "<1>";
-                    sendToThomas.isEnabled = false;
+                    self.sendToThomas.isHidden = true;
                 }else{
                     abElementNames[0].text = abElementNames[1].text;
                     abElementLabels[0].text = abElementLabels[1].text;
                     abElementNames[1].text = "";
                     abElementLabels[1].text = "<2>";
-                    sendToThomas.isEnabled = false;
+                    self.sendToThomas.isHidden = true;
                 }
                 
             }else if aBElementLabels[1].text == sender.titleLabel!.text{
                 abElementNames[1].text = "";
                 abElementLabels[1].text = "<2>";
-                sendToThomas.isEnabled = false;
+                self.sendToThomas.isHidden = true;
             }
 //            abElementNames[aBList.count-1].text = "";
 //            abElementLabels[aBList.count-1].text = "<??>";
@@ -149,8 +149,8 @@ class PeriodicTableController: UIViewController {
         }
         
         //If all elements are selected, activate button
-        if(aBList.count == 2 && xElementSelected.text != "<3>"){
-            sendToThomas.isEnabled = true;
+        if(aBList.count == 2 && xElementSelected.text != "<3>") {
+            self.sendToThomas.isHidden = false;
         }
         
 //        if aBList.count == 0{
@@ -187,7 +187,7 @@ class PeriodicTableController: UIViewController {
             sender.backgroundColor = UIColor(red: 1, green: 0.578105, blue: 0, alpha: 1);
             xElementList = xElementList.filter({ !($0 == sender)});
             xElementSelected.text = "<3>";
-            sendToThomas.isEnabled = false;
+            self.sendToThomas.isHidden = true;
             elementName3.text = "";
         }else if xElementList.count == 0{
             xElementList.append(sender);
@@ -198,7 +198,7 @@ class PeriodicTableController: UIViewController {
             elementName3.text = elementNames[element!];
             //if all a, b and x elements selected, then enable next button
             if(aBList.count == 2){
-                sendToThomas.isEnabled = true;
+                self.sendToThomas.isHidden = false;
             }
             
         }else{

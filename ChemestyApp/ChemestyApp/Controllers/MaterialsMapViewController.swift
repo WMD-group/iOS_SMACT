@@ -14,6 +14,7 @@ class MaterialsMapViewController: UIViewController {
 
     //Image Views
     @IBOutlet weak var ImageView: UIImageView!
+    @IBOutlet weak var PictureFrame: UIImageView!
     @IBOutlet weak var ThomasImageView: UIImageView!
     @IBOutlet weak var SpeechBubbleImage: UIImageView!
     @IBOutlet weak var MaterialMap: UIImageView!
@@ -29,27 +30,29 @@ class MaterialsMapViewController: UIViewController {
     
     //Unexplored X Button
     @IBAction func UnexploredXButton(_ sender: Any) {
-        SpeechLabel.text="We need flexible electronics to make phones that can bend.";
+        SpeechLabel.text="We are searching for new materials, which can capture carbon dioxide from the atmosphere and slow down global warming.";
         SpeechLabel1.text="Click on another X or press 'Next' to continue.";
         ImageView.isHidden=false;
+        PictureFrame.isHidden=false;
         ImageView.image = UIImage(named: "Click_X_fig_3")
     }
     
     //Solar Panel X Button
     @IBAction func SolarPanelXButton(_ sender: Any) {
-        SpeechLabel.text="We need stronger and lighter materials to make safer aeroplane wings.";
+        SpeechLabel.text="We are searching for new materials to make solid-state batteries, which can store renewable electricity.";
         SpeechLabel1.text="Click on another X or press 'Next' to continue.";
         ImageView.isHidden=false;
+        PictureFrame.isHidden=false;
         ImageView.image = UIImage(named: "Click_X_fig_1")
     }
     
     // Car/Bike X Button
     @IBAction func CarXButton(_ sender: Any) {
-        SpeechLabel.text="We need materials which can bend light to make invisibility cloaks.";
+        SpeechLabel.text="We are searching for 2-D super-conducting materials, which can improve medical equipment and public transport.";
         SpeechLabel1.text="Click on another X or press 'Next' to continue.";
         ImageView.isHidden=false;
+        PictureFrame.isHidden=false;
         ImageView.image = UIImage(named: "Click_X_fig_2")
-        
     }
     
     @IBAction func PlayVideoButton(_ sender: Any) {
@@ -73,8 +76,8 @@ class MaterialsMapViewController: UIViewController {
                 self.X1.isHidden = false;
                 self.X2.isHidden = false;
                 self.X3.isHidden = false;
-                self.SpeechLabel.text="Scientists are searching this 'material space' for materials which can develop new and existing technologies.";
-                self.SpeechLabel1.text="Click on an X to find out about some exciting future tech!";
+                self.SpeechLabel.text="Scientists are searching the unknown 'material space' for materials which can develop new and existing technologies.";
+                self.SpeechLabel1.text="Click on an X to see what they are looking for!";
                 self.PlayVidButton.isHidden = true;
             }, completion: nil)
             

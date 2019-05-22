@@ -14,16 +14,18 @@ class PerovskiteViewController: UIViewController {
     @IBOutlet weak var sceneView: SCNView!
     
     
+    
     @IBOutlet weak var ThomasImage: UIImageView!
     @IBOutlet weak var SpeechBubble: UIImageView!
     @IBOutlet weak var SpeechLabel: UILabel!
+    @IBOutlet weak var ChemicalFormula: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad();
         
         //Delays:
-        //Move Thomas up after 5 seconds
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+        //Move Thomas up after 2 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
             UIView.animate(withDuration: 1, animations:{
                 self.ThomasImage.isHidden = false;
                 self.SpeechBubble.isHidden = false;
@@ -36,7 +38,7 @@ class PerovskiteViewController: UIViewController {
         
         //Creating the scene for the 3D material
 //        let scene = SCNScene();
-        let scene = SCNScene(named: "3DPerovskite.dae")!;
+        let scene = SCNScene(named: "3DPerovskite2.dae")!;
         
 //        let cameraNode = SCNNode();
 //        cameraNode.camera = SCNCamera();
