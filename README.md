@@ -13,4 +13,6 @@ It was used as part of the 2018 Royal Society Summer Exhibition [Code for Creati
 - [Suzy Wallace](https://github.com/skw32)
 - [Aron Walsh](https://github.com/aronwalsh)
 
-<img src="App_demo_1.png" width="200px">
+![](App_demo_1.gif)
+
+![](App_demo_2.gif)
