@@ -13,6 +13,12 @@ It was used as part of the 2018 Royal Society Summer Exhibition [Code for Creati
 - [Suzy Wallace](https://github.com/skw32)
 - [Aron Walsh](https://github.com/aronwalsh)
 
+# App preview
+
+The app shows an introductory video, introducing the background of the materials design challenge:
+
 ![](App_demo_1.gif)
+
+Elements of the periodic table can be chosen by the user to create a (potentially new!) perovskite crystal structure, with the help of "Thomas" the supercomputer:
 
 ![](App_demo_2.gif)
